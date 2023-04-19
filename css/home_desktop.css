@@ -1,0 +1,361 @@
+/*FONTS - IBM PLEX SANS*/
+
+@font-face {
+    font-family:'IBMPlexSans-Bold';
+    src: url('../fonts/IBM Plex Sans/IBMPlexSans-Bold.ttf');
+}
+
+@font-face {
+    font-family:'IBMPlexSans-Medium';
+    src: url('../fonts/IBM Plex Sans/IBMPlexSans-Medium.ttf');
+}
+
+@font-face {
+    font-family:'IBMPlexSans-Light';
+    src: url('../fonts/IBM Plex Sans/IBMPlexSans-Light.ttf');
+}
+
+/*FONTS - LATO*/
+@font-face {
+    font-family:'LatoBlack';
+    src: url('../fonts/Lato/Lato-Black.ttf');
+}
+
+@font-face {
+    font-family:'LatoBold';
+    src: url('../fonts/Lato/Lato-Bold.ttf');
+}
+
+
+
+.btn-sabermais-img:hover{
+    filter: grayscale();
+}
+
+/* CSS TITULO */
+
+#topo{
+    position: absolute;
+    z-index: 100;
+}
+
+.cabecalho-titulo{
+    color:rgb(77, 77, 77)!important;
+    font-family:'IBMPlexSans-Bold';
+    font-size: 35px;
+    margin-top: 52px;
+    text-transform: uppercase; 
+}
+
+.linha-cabecalho{
+    border-top: 1px solid rgb(112, 112, 112);
+    margin-top: 10px;
+}
+
+/* CSS BARRA NAVEGACAO */
+
+.nav-link{
+    color: rgb(77, 77, 77);
+    font-family: 'LatoBlack';
+    font-size: 18px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    color: rgb(177, 126, 51);
+}
+
+.nav-link.active{
+    color: rgb(177, 126, 51)!important;
+}
+
+.dropdown-menu{
+    color: rgb(77, 77, 77);
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0px 0px 17px 0px;
+    font-family: 'IBMPlexSans-Medium';
+    font-size: 13px;
+    padding: 25px 15px 30px 15px;
+    text-transform: uppercase;
+}
+
+.dropdown-item:hover{
+    color: rgb(180, 125, 51)!important;
+}
+
+/* CSS CARROSSEL */
+
+#area-banner{
+    font-family: 'IBMPlexSans-Light';
+    margin: 0px -15px;
+}
+
+.carousel-item > img{
+    width: 1280px;
+    height:730px;
+}
+
+.carousel-caption{
+    position: absolute;
+    text-align: left;
+    top: 35%;
+}
+
+.banner-novidade{
+    color: rgb(180, 125, 51);
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.banner-titulo{
+    color: rgb(77, 77, 77);
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    width: 45%;
+}
+
+.banner-texto{
+    color: rgb(77, 77, 77);
+    font-size: 13px;
+    margin-bottom: 15px;
+    width: 55%;
+}
+
+.btn-sabermais-img{
+    height: 30px;
+    width: 120px;
+}
+
+.carousel-indicators{
+    bottom: 80px; 
+    justify-content: left;
+}
+
+.carousel-indicators > button {
+    background-color: transparent !important;
+    border: 1px solid rgb(77, 77, 77)!important;
+    border-radius: 50%!important;
+    height: 20px!important;
+    margin-right: 15px !important;
+    width: 20px!important;
+}
+
+.carousel-indicators > button.active{
+    background-color: rgb(77, 77, 77) !important;
+}
+
+/* CSS BEM-VINDO */
+
+#bemvindo-caixa{
+    background-color: white;
+    height: 538px;
+    margin-left: 90px;
+    margin-top: -45px;
+    position: relative;
+    z-index: 30;   
+}
+
+#bemvindo-img{
+    width: 33%;  
+}
+
+#bemvindo-img > img{
+    box-shadow: 5px 5px 10px rgba(206, 205, 205);
+    height: 396px;
+    margin: 65px 0px 60px 50px;
+    width: 312px;
+}
+
+.bemvindo-texto{
+    margin: 70px 80px 0px 25px;
+
+}
+
+#bemvindo-paragrafo{
+    margin-top: 30px;
+}
+
+.t1{
+    color: rgb(77, 77, 77);
+    font-family: 'IBMPlexSans-Bold';
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.p{
+    color: rgb(77, 77, 77);
+    font-family: 'IBMPlexSans-Light';
+    font-size: 13px;
+}
+
+.bemvindo-botao{
+    margin-top: 40px;
+    text-align: right;
+}
+
+/* CSS ULTIMOS LIVROS */
+
+#ultimoslivros-area{
+    margin-left: 20px;
+    margin-top: 85px;
+}
+
+
+#ultimoslivros-texto{
+    margin: 23px 0px 70px 0px;
+}
+
+/* CSS LIVROS EM DESTAQUE */
+
+.card {
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: 5px 5px 10px rgba(206, 205, 205);
+    height: 700px;
+    padding: 0px;
+    margin-left: 25px;
+}
+
+.card > img{
+    border-radius: 0px;
+    height: 428px;
+}
+
+.card-body{
+    padding: 25px 25px 0px 25px;
+}
+
+#destaques-titulo{
+    font-size: 23px;
+}
+
+#destaques-categoria{
+    color: rgb(180, 125, 51);
+    font-size: 'IBMPlexSans-Bold';
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#destaques-paragrafo{
+    margin-top: -5px;
+}
+
+.destaques-botao{
+    margin-top: 15px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+
+/* CSS RODAPE */
+
+/* CSS BARRA DE MENUS */
+
+#barra-menus{
+    margin-top: 106px;
+    margin-bottom: 50px;
+}
+
+#menu-rodape-area{
+    margin: 27px 0px;
+    text-align: center;
+}
+
+.linha-rodape{
+    border-top: 2px solid rgb(112, 112, 112);
+    width: 95%;
+}
+
+.menu-rodape{
+    color: rgb(77, 77, 77);
+    font-family: 'LatoBlack';
+    font-size: 16px;
+    margin: 0px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu-rodape.active{
+    color: rgb(177, 126, 51);
+}
+
+.menu-rodape:hover{
+   color: rgb(177, 126, 51);  
+}
+
+/* CSS CONTACTOS E REDES SOCIAIS */
+
+#rodape-titulo{
+    font-family: 'IBMPlexSans-Medium';
+    margin-left: 43px;
+}
+
+#rodape-redes{
+    margin-bottom: 75px;
+    margin-top: 20px;
+}
+
+#contacto-items{
+    margin-left: 43px;
+}
+
+.contactos-titulo{
+    color: rgb(177, 126, 51);
+    font-family: 'IBMPlexSans-Medium';
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.contactos-texto{
+    color: rgb(77, 77, 77);
+    font-family: 'IBMPlexSans-Light';
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.reclamacoes-ralc{
+    margin-left: 43px;
+    margin-top: 65px;
+}
+
+.reclamacoes{
+    height: 31px;
+    width: 77px;
+}
+
+.ralc{
+    height: 29px;
+    width: 125px;
+}
+
+.redes-area{
+    text-align: center;
+}
+
+.redes-titulo{
+    font-family: 'IBMPlexSans-Medium';
+}
+
+.redes-icons{
+    margin-top: 30px;
+}
+
+.icon-item{
+    width: 37px;
+}
+
+.icon-item:hover{
+    filter: grayscale();
+}
+
+.redes-copyright{
+    margin-top: 88px;
+}
