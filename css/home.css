@@ -60,24 +60,33 @@
     
     #bemvindo-caixa{
         background-color: var(--branco);
+        box-shadow: 5px 5px 10px rgb(110, 110, 110);
         display: flex;
         justify-content: center;
         height: 1210px;
     }
 
     #bemvindo-img{
-        box-shadow: 5px 5px 10px rgba(206, 205, 205);
-        height: 396px;
-        width: 286px;
-        margin: 70px 0px 0px 0px !important; 
+        margin: 70px 0px 0px 0px !important;
+    }
+
+    #bemvindo-img > img{
+        width: auto; 
+    }
+
+    .bemvindo-texto{
+        margin-top: 0px;
     }
 
     .bemvindo-titulo{
         text-align: left;
     }
 
-    #bemvindo-paragrafo{
-        margin-top: 25px;
+    .bemvindo-paragrafo{
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 22;
     }
 
     .bemvindo-botao{
@@ -86,14 +95,12 @@
     }
 }
 
-
 /* CSS ULTIMOS LIVROS */
 
 #ultimoslivros-area{
     margin-left: 20px;
     margin-top: 85px;
 }
-
 
 #ultimoslivros-texto{
     margin: 23px 0px 70px 0px;
