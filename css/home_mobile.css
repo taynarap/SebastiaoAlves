@@ -1,74 +1,14 @@
-/*FONTS - IBM PLEX SANS*/
-
-@font-face {
-    font-family:'IBMPlexSans-Bold';
-    src: url('../fonts/IBM Plex Sans/IBMPlexSans-Bold.ttf');
-}
-
-@font-face {
-    font-family:'IBMPlexSans-Medium';
-    src: url('../fonts/IBM Plex Sans/IBMPlexSans-Medium.ttf');
-}
-
-@font-face {
-    font-family:'IBMPlexSans-Light';
-    src: url('../fonts/IBM Plex Sans/IBMPlexSans-Light.ttf');
-}
-
-/*FONTS - LATO*/
-@font-face {
-    font-family:'LatoBlack';
-    src: url('../fonts/Lato/Lato-Black.ttf');
-}
-
-@font-face {
-    font-family:'LatoBold';
-    src: url('../fonts/Lato/Lato-Bold.ttf');
-}
-
-/* CSS EM COMUM */
-body{
-    margin: 0;
-}
-
-
-.t1{
-    color: rgb(77, 77, 77);
-    font-family: 'IBMPlexSans-Bold';
-    font-size: 22px;
-    text-transform: uppercase;
-}
-
-.p{
-    color: rgb(77, 77, 77);
-    font-family: 'IBMPlexSans-Light';
-    font-size: 13px;
-}
-
-.titulo{
-    color: rgb(77, 77, 77);
-    font-family: 'IBMPlexSans-Bold';
-    font-size: 35px;
-    text-transform: uppercase;
-}
-
-.btn-sabermais-img:hover{
-    filter: grayscale();
-}
-
 /* CSS TITULO */
 
-header{
-    padding-right: -12px;
-}
-
-#topo{
+@media screen and (max-width: 360px) {
+    #topo-mobile{
     margin-top: 70px;
     position: absolute;
     z-index: 100;
 }
 
-.cabecalho-titulo{  
+.cabecalho-titulo-mobile{  
+    font-size: 22px;
     width: fit-content;
 }
 
@@ -108,7 +48,6 @@ header{
     min-width: 360px !important;
 }
 
-
 .dropdown-menu{
     color: rgb(77, 77, 77);
     border: none;
@@ -131,6 +70,7 @@ header{
 #area-banner{
     font-family: 'IBMPlexSans-Light';
     height: 780px!important;
+    max-width: 360px !important;
 }
 
 .banner-imagem{
@@ -208,7 +148,7 @@ header{
     box-shadow: 5px 5px 10px rgba(206, 205, 205);
     max-height: 396px;
     max-width: 286px;
-    margin-top: 73px;  
+    margin-top: 70px; 
 }
 
 .bemvindo-titulo{
@@ -234,6 +174,7 @@ header{
 
 #ultimoslivros-area{
     margin-top: 80px;
+    padding: 0px 15px;
 }
 
 
@@ -251,8 +192,7 @@ header{
     box-shadow: 5px 5px 10px rgba(206, 205, 205);
     height: 630px;
     width: 280px;
-    padding: 0px;
-    margin-left: 25px;
+    padding: 0px; 
 }
 
 .card > img{
@@ -286,11 +226,9 @@ header{
     text-align: right;
 }
 
-
 /* CSS RODAPE */
 
 /* CSS CONTACTOS E REDES SOCIAIS */
-
 
 .linha-rodape{
     border-top: 2px solid rgb(158, 157, 157);
@@ -360,3 +298,5 @@ header{
 .redes-copyright{
     margin-top: 43px;
 }
+}
+

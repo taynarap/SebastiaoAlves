@@ -1,0 +1,314 @@
+/* CSS EM COMUM PARA TODAS AS PÁGINAS*/
+
+/*FONTS - IBM PLEX SANS*/
+
+@font-face {
+    font-family:'IBMPlexSans-Bold';
+    src: url('../fonts/IBMPlexSans-Bold.ttf');
+}
+
+@font-face {
+    font-family:'IBMPlexSans-Medium';
+    src: url('../fonts/IBMPlexSans-Medium.ttf');
+}
+
+@font-face {
+    font-family:'IBMPlexSans-Light';
+    src: url('../fonts/IBMPlexSans-Light.ttf');
+}
+
+/*FONTS - LATO*/
+@font-face {
+    font-family:'LatoBlack';
+    src: url('../fonts/Lato-Black.ttf');
+}
+
+@font-face {
+    font-family:'LatoBold';
+    src: url('../fonts/Lato-Bold.ttf');
+}
+
+/* CORES */
+:root{
+    --cinza-1D: rgb(29, 29, 29) !important;
+    --cinza-70: rgb(112, 112, 112) !important;
+    --cinza-4D: rgb(77, 77, 77) !important;
+    --dourado-B4: rgb(180, 125, 51) !important;
+    --dourado-B1: rgb(177, 126, 59) !important;
+    --dourado-A9: rgb(169, 115, 57) !important;
+    --branco: rgb(255, 255, 255) !important;
+    --preto: rgb(0, 0, 0) !important;
+}
+
+/* CSS TEXTO */
+.t1{
+    font-family: 'IBMPlexSans-Bold';
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--cinza-4D);
+}
+
+.p{
+    font-family: 'IBMPlexSans-Light';
+    font-size: 13px;
+    color: var(--cinza-4D);
+}
+
+.titulo{
+    font-family: 'IBMPlexSans-Bold';
+    font-size: 35px;
+    text-transform: uppercase;
+    color: var(--cinza-4D);
+}
+
+/* HEADER */
+
+#topo{
+    position: absolute;
+    z-index: 100;
+}
+
+.cabecalho-titulo{
+    color:var(--cinza-4D);
+    font-family:'IBMPlexSans-Bold';
+    font-size: 40px;
+    margin-top: 52px;
+    text-transform: uppercase; 
+}
+
+.linha-cabecalho{
+    border-top: 1px solid var(--cinza-70);
+    margin-top: 10px;
+}
+
+/* CSS BARRA NAVEGACAO */
+
+.nav-link{
+    color: var(--cinza-4D);
+    font-family: 'LatoBlack';
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    color: var(--dourado-B1);
+}
+
+.nav-link.active{
+    color: var(--dourado-B1) !important;
+}
+
+.dropdown-menu{
+    color: var(--cinza-4D);
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0px 0px 17px 0px;
+    font-family: 'IBMPlexSans-Medium';
+    font-size: 13px;
+    padding: 25px 15px 30px 15px;
+    text-transform: uppercase;
+}
+
+.dropdown-item:hover{
+    background-color: var(--branco);
+    color: var(--dourado-B4);
+}
+
+/* CSS CARROSSEL */
+
+#area-banner{
+    font-family: 'IBMPlexSans-Light';
+    margin: 0px -15px;
+}
+
+.carousel-item > img{
+    width: 1280px;
+    height:730px;
+}
+
+.carousel-caption{
+    position: absolute;
+    text-align: left;
+    top: 35%;
+}
+
+.banner-novidade{
+    color: var(--dourado-B4);
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.banner-titulo{
+    color: var(--cinza-4D);
+    font-size: 40px;
+    font-family: 'IBMPlexSans-Light';
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    width: 45%;
+}
+
+.banner-texto{
+    color: var(--cinza-4D);
+    font-size: 13px;
+    margin-bottom: 15px;
+    width: 55%;
+}
+
+.btn-sabermais-img{
+    height: 30px;
+    width: 120px;
+}
+
+.carousel-indicators{
+    bottom: 80px; 
+    justify-content: left;
+}
+
+.carousel-indicators > button {
+    background-color: transparent !important;
+    border: 1px solid var(--cinza-4D) !important;
+    border-radius: 50%!important;
+    height: 20px!important;
+    margin-right: 15px !important;
+    width: 20px!important;
+}
+
+.carousel-indicators > button.active{
+    background-color: var(--cinza-4D) !important;
+}
+
+
+@media all and (max-width: 1190px) {
+
+    .cabecalho-titulo{
+        font-size: 35px;
+    }
+    
+}
+
+@media all and (max-width: 1115px) {
+
+    .cabecalho-titulo{   
+        font-size: 30px;
+        
+    }
+    
+}
+
+@media all and (max-width: 768px) {
+
+    .cabecalho-titulo{   
+        font-size: 22px;
+        width: fit-content;
+    }
+    
+}
+
+
+/* FOOTER */
+
+/* CSS BARRA DE MENUS */
+
+#barra-menus{
+    margin-top: 106px;
+    margin-bottom: 50px;
+}
+
+#menu-rodape-area{
+    margin: 27px 0px;
+    text-align: center;
+}
+
+.linha-rodape{
+    border-top: 2px solid rgb(112, 112, 112);
+    width: 95%;
+}
+
+.menu-rodape{
+    color: rgb(77, 77, 77);
+    font-family: 'LatoBlack';
+    font-size: 16px;
+    margin: 0px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu-rodape.active{
+    color: rgb(177, 126, 51);
+}
+
+.menu-rodape:hover{
+   color: rgb(177, 126, 51);  
+}
+
+/* CSS CONTACTOS E REDES SOCIAIS */
+
+#rodape-titulo{
+    font-family: 'IBMPlexSans-Medium';
+    margin-left: 43px;
+}
+
+#rodape-redes{
+    margin-bottom: 75px;
+    margin-top: 20px;
+}
+
+#contacto-items{
+    margin-left: 43px;
+}
+
+.contactos-titulo{
+    color: rgb(177, 126, 51);
+    font-family: 'IBMPlexSans-Medium';
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.contactos-texto{
+    color: rgb(77, 77, 77);
+    font-family: 'IBMPlexSans-Light';
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.reclamacoes-ralc{
+    margin-left: 43px;
+    margin-top: 65px;
+}
+
+.reclamacoes{
+    height: 31px;
+    width: 77px;
+}
+
+.ralc{
+    height: 29px;
+    width: 125px;
+}
+
+.redes-area{
+    text-align: center;
+}
+
+.redes-titulo{
+    font-family: 'IBMPlexSans-Medium';
+}
+
+.redes-icons{
+    margin-top: 30px;
+}
+
+.icon-item{
+    width: 37px;
+}
+
+.icon-item:hover{
+    filter: grayscale();
+}
+
+.redes-copyright{
+    margin-top: 88px;
+}
