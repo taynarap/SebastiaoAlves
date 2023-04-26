@@ -1,0 +1,141 @@
+/* CSS BEM-VINDO */
+
+#bemvindo-caixa{
+    background-color: var(--branco);
+    height: 538px;
+    margin-top: -45px;
+    position: relative;
+    z-index: 30;   
+}
+
+#bemvindo-img{
+    box-shadow: 5px 5px 10px rgba(206, 205, 205);
+    height: 396px;
+    margin: 65px 0px 60px 50px;
+    width: 312px;
+    padding: 0px;
+}
+
+.bemvindo-texto{
+    margin-top: 60px;
+    width: 70%;
+}
+
+.bemvindo-paragrafo{
+    margin-top: 30px;
+}
+
+.bemvindo-btn{
+    margin-top: 40px;
+    float: right;
+}
+
+.caixa-separadora{
+    border: none;
+    box-shadow: 0px 5px 5px 0px rgba(178, 178, 178, 0.711);
+    height: 20px;
+}
+
+@media all and (max-width: 1134px){
+    
+    .bemvindo-paragrafo{
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 15;
+    }
+}
+
+@media all and (max-width: 917px){
+    
+    .bemvindo-paragrafo{
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 13;
+    }
+}
+
+@media all and (max-width: 767px){
+    
+    #bemvindo-caixa{
+        background-color: var(--branco);
+        display: flex;
+        justify-content: center;
+        height: 1210px;
+    }
+
+    #bemvindo-img{
+        box-shadow: 5px 5px 10px rgba(206, 205, 205);
+        height: 396px;
+        width: 286px;
+        margin: 70px 0px 0px 0px !important; 
+    }
+
+    .bemvindo-titulo{
+        text-align: left;
+    }
+
+    #bemvindo-paragrafo{
+        margin-top: 25px;
+    }
+
+    .bemvindo-botao{
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+
+/* CSS ULTIMOS LIVROS */
+
+#ultimoslivros-area{
+    margin-left: 20px;
+    margin-top: 85px;
+}
+
+
+#ultimoslivros-texto{
+    margin: 23px 0px 70px 0px;
+}
+
+/* CSS LIVROS EM DESTAQUE */
+
+.card {
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: 5px 5px 10px rgba(206, 205, 205);
+    height: 700px;
+    padding: 0px;  
+}
+
+.card > img{
+    border-radius: 0px;
+    max-height: 428px;
+}
+
+.card-body{
+    padding: 25px 25px 0px 25px;
+}
+
+#destaques-titulo{
+    font-size: 23px;
+}
+
+#destaques-categoria{
+    color: var(--dourado-B4);
+    font-size: 'IBMPlexSans-Bold';
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#destaques-paragrafo{
+    margin-top: -5px;
+}
+
+.destaques-botao{
+    margin-top: 15px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    text-align: right;
+}

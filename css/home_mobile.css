@@ -1,69 +1,11 @@
 /* CSS TITULO */
 
 @media screen and (max-width: 360px) {
-    #topo-mobile{
-    margin-top: 70px;
-    position: absolute;
-    z-index: 100;
-}
 
-.cabecalho-titulo-mobile{  
-    font-size: 22px;
-    width: fit-content;
-}
-
-.linha-cabecalho{
-    border-top: 1px solid rgb(112, 112, 112);
-    margin-top: 15px;
-}
 
 /* CSS BARRA NAVEGACAO */
 
-.navbar-toggler {
-    border: none;
-}
 
-.navbar-nav{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 40px;
-}
-
-.nav-link{
-    color: rgb(77, 77, 77);
-    font-family: 'LatoBlack';
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-.nav-link:hover{
-    color: rgb(177, 126, 51);
-}
-
-.nav-link.active{
-    color: rgb(177, 126, 51)!important;
-}
-
-#navbarMobile{
-    min-width: 360px !important;
-}
-
-.dropdown-menu{
-    color: rgb(77, 77, 77);
-    border: none;
-    border-radius: 0px;
-    box-shadow: 0px 0px 17px 0px;
-    font-family: 'IBMPlexSans-Medium';
-    font-size: 13px;
-    padding: 25px 0px 30px 15px;
-    text-transform: uppercase;
-    width: 280px;
-}
-
-.dropdown-item:hover{
-    color: rgb(180, 125, 51)!important;
-    background-color: white;
-}
 
 /* CSS CARROSSEL */
 
@@ -73,69 +15,8 @@
     max-width: 360px !important;
 }
 
-.banner-imagem{
-    height: 780px;
-}
 
 
-.carousel-caption{
-    position: absolute;
-    text-align: left; 
-    padding: 0px;
-    margin-bottom: 80px;
-}
-
-.banner-novidade{
-    color: rgb(180, 125, 51);
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-.banner-titulo{
-    color: rgb(77, 77, 77);
-    font-family: 'IBMPlexSans-Light';
-    font-size: 25px;
-    font-weight: 100;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-.banner-texto{
-    color: rgb(77, 77, 77);
-    font-family: 'IBMPlexSans-Light';
-    font-size: 13px;
-    font-weight: 100;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    width: 75vw;
-}
-
-.btn-sabermais-img{
-    height: 26px;
-    margin-top: 10px;
-    width: 101px;
-}
-
-.carousel-indicators{
-    margin-top: -20px;
-    justify-content: left;
-}
-
-.carousel-indicators > button {
-    background-color: transparent !important;
-    border: 1px solid rgb(77, 77, 77)!important;
-    border-radius: 50%!important;
-    height: 20px!important;
-    margin-right: 15px !important;
-    width: 20px!important;
-}
-
-.carousel-indicators > button.active{
-    background-color: rgb(77, 77, 77) !important;
-}
 
 /* CSS BEM-VINDO */
 
@@ -230,22 +111,22 @@
 
 /* CSS CONTACTOS E REDES SOCIAIS */
 
-.linha-rodape{
+.linha-rodape-mobile{
     border-top: 2px solid rgb(158, 157, 157);
     margin: 60px 0px;
     width: 80%;
 }
 
-#rodape-titulo{
+#rodape-titulo-mobile{
     font-family: 'IBMPlexSans-Medium';
 }
 
-#rodape-redes{
+#rodape-redes-mobile{
     margin-bottom: 75px;
     margin-top: 20px;
 }
 
-.contactos-titulo{
+.contactos-titulo-mobile{
     color: rgb(177, 126, 51);
     font-family: 'IBMPlexSans-Medium';
     font-size: 15px;
@@ -253,49 +134,45 @@
     text-transform: uppercase;
 }
 
-.contactos-texto{
+.contactos-texto-mobile{
     color: rgb(77, 77, 77);
     font-family: 'IBMPlexSans-Light';
     font-size: 14px;
 }
 
-.reclamacoes-ralc{
+.reclamacoes-ralc-mobile{
     margin-top: 65px;
 }
 
-.reclamacoes{
+.reclamacoes-mobile{
     height: 31px;
     width: 77px;
 }
 
-.ralc{
+.ralc-mobile{
     height: 29px;
     width: 125px;
 }
 
-.redes-area{
+.redes-area-mobile{
     text-align: center;
 }
 
-.redes-titulo{
+.redes-titulo-mobile{
     font-family: 'IBMPlexSans-Medium';
     font-size: 20px;
     margin-top: 40px;
 }
 
-.redes-icons{
+.redes-icons-mobile{
     margin-top: 30px;
 }
 
-.icon-item{
+.icon-item-mobile{
     width: 37px;
 }
 
-.icon-item:hover{
-    filter: grayscale();
-}
-
-.redes-copyright{
+.redes-copyright-mobile{
     margin-top: 43px;
 }
 }

@@ -15,32 +15,33 @@
             crossorigin="anonymous"></script>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="css/home_desktop.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/base.css">
 
-        <link rel="stylesheet" href="css/home_mobile.css">
-        <link rel="stylesheet" href="css/base.css">        
+        <!--JQUERY-->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     </head>
 
     <body class="px-0">
 
         <!-- CABEÇALHO  -->
-        
-        <header class="container-fluid px-0">
+
+        <header class="container-fluid px-0 w-auto">
             <!-- TITULO -->
             <!--DESKTOP-->
-            <div class="row w-100 d-none d-md-block" id="topo">
+            <div class="row w-100 mx-auto d-none d-sm-block" id="topo">
 
-                <div class="cabecalho-titulo col-12 d-flex justify-content-center">
 
-                    <div class="row">Sebastião Alves</div>
-
-                </div>
+                <div class="col-12 d-flex justify-content-center cabecalho-titulo justify-content-center mt-5">
+                    Sebastião Alves</div>
 
                 <div class="linha-cabecalho mx-auto col-11"></div>
 
+
                 <!-- BARRA DE NAVEGAÇÃO  -->
 
-                <nav class="navbar navbar-expand-md">
+                <nav class="navbar navbar-expand-sm">
                     <div class="container justify-content-center">
 
                         <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
@@ -60,7 +61,8 @@
                                         <li><a class="dropdown-item pb-3" href="#">Senhora Do Amor e DA Guerra</a>
                                         </li>
                                         <li><a class="dropdown-item pb-3" href="#">O Caracol Estrábico</a></li>
-                                        <li><a class="dropdown-item pb-3" href="#">O Coleccionador de Amnésias</a></li>
+                                        <li><a class="dropdown-item pb-3" href="#">O Coleccionador de Amnésias</a>
+                                        </li>
                                         <li><a class="dropdown-item" href="#">O Velho que Pensava que Fugia</a>
                                         </li>
                                     </ul>
@@ -76,11 +78,12 @@
                         </div>
                     </div>
                 </nav>
+
             </div>
 
             <!-- AREA BANNER  -->
 
-            <div id="area-banner" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+            <div id="area-banner" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#area-banner" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -93,9 +96,9 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="imgs/desktop/cabecalho1.jpg" class="d-block w-100"
+                        <img class="banner-imagem w-100" src="imgs/desktop/cabecalho1.jpg"
                             alt="Livro Senhora do Amor e da Guerra">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-none d-sm-block">
                             <p class="banner-novidade">Novidade</p>
                             <h5 class="banner-titulo">Senhora do Amor e da Guerra</h5>
                             <p class="banner-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
@@ -103,17 +106,15 @@
                                 recusandae, sapiente voluptas fugiat dignissimos fuga modi numquam sunt, culpa ex! Natus
                                 dolor eveniet ducimus possimus mollitia nihil molestiae, porro dolore.</p>
                             <div class="banner-sabermais">
-                                <a href="...">
-                                    <img class="btn-sabermais-img" src="imgs/desktop/sabermais1.svg"
-                                        alt="Botão Saber Mais">
-                                </a>
+                                <button class="btn-sabermais"></button>
                             </div>
                         </div>
 
                     </div>
                     <div class="carousel-item">
-                        <img src="imgs/desktop/cabecalho2.jpg" class="d-block w-100" alt="Livro O Caracol Estrábico">
-                        <div class="carousel-caption d-none d-md-block">
+                        <img class="banner-imagem w-100" src="imgs/desktop/cabecalho2.jpg"
+                            alt="Livro O Caracol Estrábico">
+                        <div class="carousel-caption d-none d-sm-block">
                             <h5 class="banner-titulo">O Caracol Estrábico</h5>
                             <p class="banner-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ducimus
                                 ullam eos necessitatibus sequi aut enim accusamus! Quaerat vero eum quos eveniet nisi
@@ -121,43 +122,36 @@
                                 aperiam cum cumque laborum.</p>
                             <div class="banner-sabermais">
                                 <a href="Saber Mais - ">
-                                    <img class="btn-sabermais-img" src="imgs/desktop/sabermais1.svg"
-                                        alt="Botão Saber Mais">
+                                    <button class="btn-sabermais"></button>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="imgs/desktop/cabecalho3.jpg" class="d-block w-100"
+                        <img class="banner-imagem w-100" src="imgs/desktop/cabecalho3.jpg"
                             alt="Livro O Coleccionador de Amnésias">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-none d-sm-block">
                             <h5 class="banner-titulo">O Coleccionador de Amnésias</h5>
                             <p class="banner-texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
                                 molestias dolorum dolore veniam aspernatur, delectus commodi pariatur! Iure, maiores.
                                 Assumenda deleniti inventore esse in voluptatem ut veritatis? Fugiat reiciendis fugit
                                 dolore unde pariatur assumenda voluptatibus quas beatae illum, inventore!</p>
                             <div class="banner-sabermais">
-                                <a href="Saber Mais - ">
-                                    <img class="btn-sabermais-img" src="imgs/desktop/sabermais1.svg"
-                                        alt="Botão Saber Mais">
-                                </a>
+                                <button class="btn-sabermais"></button>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="imgs/desktop/cabecalho4.jpg" class="d-block w-100"
+                        <img class="banner-imagem w-100" src="imgs/desktop/cabecalho4.jpg"
                             alt="Livro O Velho que Pensava que Fugia">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-none d-sm-block">
                             <h5 class="banner-titulo">O Velho que Pensava que Fugia</h5>
                             <p class="banner-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
                                 est cumque delectus, quis assumenda, labore quod architecto mollitia nobis molestias,
                                 dolorem laborum? Nobis debitis perspiciatis quibusdam doloremque, tempora autem.
                                 Laudantium, iste distinctio totam doloremque maiores nihil aspernatur unde vero?</p>
                             <div class="banner-sabermais">
-                                <a href="Saber Mais - ">
-                                    <img class="btn-sabermais-img" src="imgs/desktop/sabermais1.svg"
-                                        alt="Botão Saber Mais">
-                                </a>
+                                <button class="btn-sabermais"></button>
                             </div>
                         </div>
                     </div>
@@ -168,21 +162,22 @@
 
             <!--MOBILE-->
 
-            <div class="row d-flex justify-content-around d-block d-md-none" id="topo">
-            
+            <div class="row w-100 mx-auto d-block d-sm-none " id="topo">
+
                 <!-- BARRA DE NAVEGAÇÃO  -->
-            
-                <nav class="navbar navbar-expand-md d-md-block">
-                    <div class="container-fluid">
-                        <div class="t1 cabecalho-titulo ms-4">Sebastião Alves</div>
-            
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile"
-                            aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
-                            <img src="imgs/desktop/menu.svg" alt="Menu Mobile">
+
+                <nav class="navbar mt-4">
+                    <div class="container-fluid px-0">
+                        <div class="t1 ms-4 cabecalho-titulo">Sebastião Alves</div>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
                         </button>
-            
+
                         <div class="linha-cabecalho mx-auto col-11"></div>
-            
+
                         <div class="collapse navbar-collapse" id="navbarMobile">
                             <ul id="navbar-nav-mobile" class="navbar-nav bg-light">
                                 <li class="nav-item">
@@ -192,8 +187,8 @@
                                     <a class="nav-link" href="#">Autor</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                                        onclick="style">
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false" onclick="style">
                                         Livros
                                     </a>
                                     <ul class="dropdown-menu my-4 shadow">
@@ -213,34 +208,33 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="contactos.html">Contactos</a>
                                 </li>
-            
+
                             </ul>
                         </div>
                     </div>
                 </nav>
-            
-            
-            
+
+
+
             </div>
-            
+
             <!-- AREA BANNER  -->
-            
-            <div id="area-banner" class="carousel slide d-block d-md-none" data-bs-ride="carousel">
+
+            <div id="area-banner-mobile" class="carousel slide d-block d-sm-none" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#area-banner" data-bs-slide-to="0" class="active"
+                    <button type="button" data-bs-target="#area-banner-mobile" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#area-banner" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#area-banner-mobile" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#area-banner" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#area-banner-mobile" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#area-banner" data-bs-slide-to="3"
+                    <button type="button" data-bs-target="#area-banner-mobile" data-bs-slide-to="3"
                         aria-label="Slide 4"></button>
-                </div>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="banner-imagem" src="imgs/mobile/cabecalho1.jpg" alt="Livro Senhora do Amor e da Guerra">
+                        <img class="banner-imagem" src="imgs/mobile/cabecalho1.jpg"
+                            alt="Livro Senhora do Amor e da Guerra">
                         <div class="carousel-caption">
                             <p class="banner-novidade">Novidade</p>
                             <h5 class="banner-titulo">Senhora do Amor e da Guerra</h5>
@@ -249,12 +243,10 @@
                                 recusandae, sapiente voluptas fugiat dignissimos fuga modi numquam sunt, culpa ex! Natus
                                 dolor eveniet ducimus possimus mollitia.</p>
                             <div class="banner-sabermais">
-                                <a href="...">
-                                    <img class="btn-sabermais-img" src="imgs/desktop/sabermais1.svg" alt="Botão Saber Mais">
-                                </a>
+                                <button class="btn-sabermais"></button>
                             </div>
                         </div>
-            
+
                     </div>
                     <div class="carousel-item">
                         <img class="banner-imagem" src="imgs/mobile/cabecalho2.jpg" alt="Livro O Caracol Estrábico">
@@ -265,42 +257,38 @@
                                 tempora non qui natus officiis! Lorem ipsum dolor sit, amet consectetur adipisicing
                                 elit. Quisquam, nisi!</p>
                             <div class="banner-sabermais">
-                                <a href="Saber Mais - ">
-                                    <img class="btn-sabermais-img" src="imgs/desktop/sabermais1.svg" alt="Botão Saber Mais">
-                                </a>
+                                <button class="btn-sabermais"></button>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="banner-imagem" src="imgs/mobile/cabecalho3.jpg" alt="Livro O Coleccionador de Amnésias">
+                        <img class="banner-imagem" src="imgs/mobile/cabecalho3.jpg"
+                            alt="Livro O Coleccionador de Amnésias">
                         <div class="carousel-caption">
                             <h5 class="banner-titulo">O Coleccionador de Amnésias</h5>
                             <p class="banner-texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
                                 molestias dolorum dolore veniam aspernatur, delectus commodi pariatur! Iure, maiores.
                                 Assumenda deleniti inventore esse in voluptatem ut veritatis?</p>
                             <div class="banner-sabermais">
-                                <a href="Saber Mais - ">
-                                    <img class="btn-sabermais-img" src="imgs/desktop/sabermais1.svg" alt="Botão Saber Mais">
-                                </a>
+                                <button class="btn-sabermais"></button>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="banner-imagem" src="imgs/mobile/cabecalho4.jpg" alt="Livro O Velho que Pensava que Fugia">
+                        <img class="banner-imagem" src="imgs/mobile/cabecalho4.jpg"
+                            alt="Livro O Velho que Pensava que Fugia">
                         <div class="carousel-caption">
                             <h5 class="banner-titulo">O Velho que Pensava que Fugia</h5>
                             <p class="banner-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
                                 est cumque delectus, quis assumenda, labore quod architecto mollitia nobis molestias,
                                 dolorem laborum? Nobis debitis perspiciatis quibusdam doloremque, tempora autem.</p>
                             <div class="banner-sabermais">
-                                <a href="Saber Mais - ">
-                                    <img class="btn-sabermais-img" src="imgs/desktop/sabermais1.svg" alt="Botão Saber Mais">
-                                </a>
+                                <button class="btn-sabermais"></button>
                             </div>
                         </div>
                     </div>
                 </div>
-            
+
             </div>
         </header>
 
@@ -308,19 +296,17 @@
 
         <!-- BEM-VINDO AUTOR  -->
 
-        <!-- DESKTOP  -->
+        <div id="bemvindo-area" class="container-fluid">
+            <div id="bemvindo-caixa" class="row offset-md-1 shadow-sm">
 
-        <div id="bemvindo-area" class="container-fluid d-none d-md-block off">
-            <div id="bemvindo-caixa" class="row offset-md-1 shadow">
-
-                <div id="bemvindo-img" class="col-auto">
+                <div id="bemvindo-img" class="col-11">
                     <img src="imgs/desktop/FOTO-editada.jpg" alt="Foto de Sebastião Alves">
                 </div>
 
-                <div class="col bemvindo-texto">
-                    <div id="bemvindo-titulo" class="t1">Bem-Vindo ao Meu Website</div>
+                <div class="col-md col-12 bemvindo-texto mx-md-5  mx-auto px-0">
+                    <div class="bemvindo-titulo t1">Bem-Vindo ao Meu Website</div>
 
-                    <div id="bemvindo-paragrafo" class="p">
+                    <div class="bemvindo-paragrafo p">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, aliquid sequi! A, fugiat
                         explicabo aspernatur aliquid minus, necessitatibus voluptate quis quos deleniti tenetur fuga,
                         illum nisi eligendi vel pariatur modi perferendis accusantium. Suscipit ex odio quo culpa natus
@@ -338,68 +324,37 @@
                         atque inventore fugit dignissimos exercitationem, numquam, illum saepe fuga fugiat illo totam.
                     </div>
 
-                    <div class="bemvindo-botao">
-                        <a href="...">
-                            <img class="btn-sabermais-img" src="imgs/desktop/sabermais1.svg" alt="Botão Saber Mais">
-                        </a>
-                    </div>
+                    <a href="...">
+                        <button class="btn-sabermais bemvindo-btn"></button>
+                    </a>
+
                 </div>
             </div>
         </div>
 
-        <!-- MOBILE  -->
-
-        <div id="bemvindo-area" class="container-fluid d-block d-md-none">
-            <div id="bemvindo-caixa" class="row d-flex justify-content-center">
-        
-                <div class="col-auto">
-                    <img class="bemvindo-img" src="imgs/desktop/FOTO-editada.jpg" alt="Foto de Sebastião Alves">
-                </div>
-        
-                <div class="col-10 bemvindo-texto p-0">
-                    <div id="bemvindo-titulo" class="t1">Bem-Vindo ao Meu Website</div>
-        
-                    <div id="bemvindo-paragrafo" class="p">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, aliquid sequi! A, fugiat
-                        explicabo aspernatur aliquid minus, necessitatibus voluptate quis quos deleniti tenetur fuga,
-                        illum nisi eligendi vel pariatur modi perferendis accusantium. Suscipit ex odio quo culpa natus
-                        molestiae, incidunt aliquam enim omnis iure harum, minus doloribus dignissimos doloremque
-                        nesciunt quia nam repellendus? Ratione doloribus inventore aspernatur dolore. Alias repudiandae
-                        saepe laborum aspernatur, facere iure labore eligendi ipsa non enim cum quibusdam, quia eos?
-                        Quam, molestiae sint eaque distinctio aperiam, nesciunt, qui minus tempore magnam officia
-                        maiores? Sapiente debitis dicta tempora, iure explicabo incidunt aliquid tempore, illo dolorem
-                        recusandae, ratione adipisci beatae harum expedita ab distinctio a placeat. Dolorum illum
-                        officiis fuga fugiat laboriosam soluta earum ducimus labore, a culpa placeat, natus nam dolores
-                        suscipit voluptatibus cum similique at quidem aspernatur assumenda. Sint, maiores repellendus
-                        omnis praesentium obcaecati architecto cupiditate temporibus ea fugiat natus iusto doloribus
-                        amet ipsum?
-                    </div>
-        
-                    <div class="bemvindo-botao">
-                        <a href="...">
-                            <img class="btn-sabermais-img" src="imgs/desktop/sabermais1.svg" alt="Botão Saber Mais">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="container-fluid caixa-separadora d-block d-md-none"></div>
+        <div class="container-fluid caixa-separadora d-block d-sm-none"></div>
 
 
         <!-- ULTIMOS LIVROS  -->
         <div class="container-fluid">
             <div id="ultimoslivros-area" class="row">
-                <div class="col-12 col-md">
+                <div class="col-12 col-sm">
                     <div id="ultimoslivros-titulo" class="t1">Últimos Livros</div>
                     <div id="ultimoslivros-texto" class="p">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam distinctio inventore aliquid doloremque qui earum beatae,
-                        culpa eaque maiores nemo quasi vero optio quaerat voluptates dolorum sapiente repellendus? Accusamus inventore quidem
-                        distinctio adipisci at molestias doloremque architecto aspernatur amet atque! Cumque veritatis ratione illo
-                        consequuntur, numquam, quos ducimus minima beatae molestiae, a in odit nostrum? Voluptate fugiat debitis assumenda,
-                        perferendis reiciendis enim ipsa magni accusantium saepe recusandae, quisquam sequi. Animi, a. Culpa quasi quam
-                        inventore, repellat quibusdam quia asperiores voluptates reiciendis optio repellendus molestias beatae architecto,
-                        voluptatem dignissimos provident doloribus! Deleniti velit autem perspiciatis vitae. Vel ad nobis accusantium unde sunt
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam distinctio inventore aliquid
+                        doloremque qui earum beatae,
+                        culpa eaque maiores nemo quasi vero optio quaerat voluptates dolorum sapiente repellendus?
+                        Accusamus inventore quidem
+                        distinctio adipisci at molestias doloremque architecto aspernatur amet atque! Cumque veritatis
+                        ratione illo
+                        consequuntur, numquam, quos ducimus minima beatae molestiae, a in odit nostrum? Voluptate fugiat
+                        debitis assumenda,
+                        perferendis reiciendis enim ipsa magni accusantium saepe recusandae, quisquam sequi. Animi, a.
+                        Culpa quasi quam
+                        inventore, repellat quibusdam quia asperiores voluptates reiciendis optio repellendus molestias
+                        beatae architecto,
+                        voluptatem dignissimos provident doloribus! Deleniti velit autem perspiciatis vitae. Vel ad
+                        nobis accusantium unde sunt
                         neque ipsam voluptatem. Assumenda soluta inventore temporibus nisi ex.
                     </div>
                 </div>
@@ -411,7 +366,7 @@
         <div class="container">
             <div id="destaques-area" class="row d-flex justify-content-center mx-auto gap-5 gx-4">
 
-                <div class="col-md-3 col-11">
+                <div class="col-sm-3 col-11">
 
                     <div class="card">
                         <img src="imgs/desktop/livro1.jpg" class="card-img-top" alt="Livro Senhora do Amor e da Guerra">
@@ -422,16 +377,13 @@
                                 adipisicing elit. Animi numquam ad maxime accusamus voluptatibus error molestiae at.
                                 doloribus voluptatem sequi quibusdam!</p>
                             <div class="destaques-botao">
-                                <a href="...">
-                                    <img class="btn-sabermais-img" src="imgs/desktop/sabermais1.svg"
-                                        alt="Botão Saber Mais">
-                                </a>
+                                <button class="btn-sabermais"></button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-11">
+                <div class="col-sm-3 col-11">
 
                     <div class="card">
                         <img src="imgs/desktop/livro2.jpg" class="card-img-top"
@@ -445,16 +397,13 @@
                                 sit
                                 illo!</p>
                             <div class="destaques-botao">
-                                <a href="...">
-                                    <img class="btn-sabermais-img" src="imgs/desktop/sabermais1.svg"
-                                        alt="Botão Saber Mais">
-                                </a>
+                                <button class="btn-sabermais"></button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-11">
+                <div class="col-sm-3 col-11">
 
                     <div class="card">
                         <img src="imgs/desktop/livro3.jpg" class="card-img-top" alt="Livro Coleccionador de Amnésias">
@@ -465,10 +414,7 @@
                                 adipisicing elit. Officia aut iste quo rem laudantium odio suscipit cupiditate, aperiam
                                 facilis, cum quis neque natus error.</p>
                             <div class="destaques-botao">
-                                <a href="...">
-                                    <img class="btn-sabermais-img" src="imgs/desktop/sabermais1.svg"
-                                        alt="Botão Saber Mais">
-                                </a>
+                                <button class="btn-sabermais"></button>
                             </div>
                         </div>
                     </div>
@@ -476,7 +422,7 @@
             </div>
         </div>
 
-    <!-- RODAPE  -->
+        <!-- RODAPE  -->
 
         <!-- DESKTOP  -->
 
@@ -583,22 +529,22 @@
             </div>
 
 
-            <!-- MOBILE  -->
+            <!-- MOBILE -->
 
-            <div class="linha-rodape mx-auto d-flex d-md-none mt-5"></div>
-            
+            <div class="linha-rodape-mobile mx-auto d-flex d-md-none mt-5"></div>
+
             <div class="row d-flex justify-content-center text-center d-block d-md-none">
-            
+
                 <div class="col-12 mx-auto">
-            
+
                     <div class="row">
-            
+
                         <div id="rodape-titulo" class="col-12 t1">Contactos</div>
-            
+
                     </div>
-            
+
                     <div id="rodape-contactos" class="row">
-            
+
                         <div id="contacto-items" class="col-12">
                             <div class="contactos-titulo">
                                 Morada
@@ -608,17 +554,17 @@
                                 1234-543 Lorem
                             </div>
                         </div>
-            
+
                         <div id="contacto-items" class="col-12">
                             <div class="contactos-titulo">
                                 Telefone
                             </div>
-            
+
                             <div class="contactos-texto">
                                 +351 123 456 789
                             </div>
                         </div>
-            
+
                         <div id="contacto-items" class="col-12">
                             <div class="contactos-titulo">
                                 Email
@@ -628,35 +574,38 @@
                             </div>
                         </div>
                     </div>
-            
+
                 </div>
-            
+
                 <div class="col-12 redes-area">
-            
+
                     <div class="redes-titulo t1">
                         Siga-me nas Redes Sociais
                     </div>
-            
+
                     <div class="redes-icons">
-                        <a class="icon-item me-4" href=""> <img src="imgs/desktop/instagram1.svg" alt="Icon Instagram"></a>
-                        <a class="icon-item me-4" href=""> <img src="imgs/desktop/facebook1.svg" alt="Icon Facebook"></a>
-                        <a class="icon-item me-4" href=""> <img src="imgs/desktop/linkedin1.svg" alt="Icon LinkedIn"></a>
+                        <a class="icon-item me-4" href=""> <img src="imgs/desktop/instagram1.svg"
+                                alt="Icon Instagram"></a>
+                        <a class="icon-item me-4" href=""> <img src="imgs/desktop/facebook1.svg"
+                                alt="Icon Facebook"></a>
+                        <a class="icon-item me-4" href=""> <img src="imgs/desktop/linkedin1.svg"
+                                alt="Icon LinkedIn"></a>
                     </div>
-            
+
                 </div>
-            
+
                 <div class="reclamacoes-ralc">
                     <a class="reclamacoes me-5" href=""> <img src="imgs/desktop/livroreclamacoes.svg"
                             alt="Livro de Reclamações"></a>
                     <a class="ralc" href=""> <img src="imgs/desktop/ralc.svg"
                             alt="Resolução Alternativa de Litígios de Consumo"></a>
                 </div>
-            
+
                 <div class="col-9 redes-copyright p">
                     Política de Cookies.<br>
                     Copyright &copy; 2021 Grupo MediaMaster. Todos os direitos reservados.
                 </div>
-            
+
             </div>
 
         </footer>
