@@ -1,0 +1,46 @@
+/*  AREA LIVRO  */
+
+/* AREA DO TITULO */
+
+#titulo-caixa{
+    background-color: white;
+    height: 130px;
+    margin-left: 90px;
+    margin-top: -45px;
+    margin-bottom: 65px;
+    position: relative;
+    z-index: 30;   
+}
+
+#titulo{
+    color: rgb(180, 125, 51);
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 55px;
+}
+
+#subtitulo{
+    font-family: 'IBMPlexSans-Medium';
+    margin-left: 55px;   
+}
+
+/* AREA DO LIVRO - TEXTO */
+
+#livro-paragrafo{
+    margin: 0px 57px 85px -35px;
+}
+
+#botao{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 57px;    
+}
+
+.btn-voltar-img{
+    height: 30px;
+    width: 132px;
+}
+
+.btn-voltar-img:hover{
+    filter: grayscale();
+}
