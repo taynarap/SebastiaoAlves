@@ -1,9 +1,8 @@
 /*  AREA TITULO  */
 
 #titulo-caixa{
-    background-color: white;
+    background-color: var(--branco);
     height: 130px;
-    margin-left: 90px;
     margin-top: -45px;
     margin-bottom: 65px;
     position: relative;
@@ -11,7 +10,7 @@
 }
 
 #titulo{
-    color: rgb(180, 125, 51);
+    color: var(--dourado-B4);
     font-size: 18px;
     margin-top: 50px;
     margin-left: 55px;
@@ -22,11 +21,45 @@
     margin-left: 55px;   
 }
 
-/* AREA TEXTO */
-
-#area-texto{
-    padding: 0px 55px 0px 55px;
+@media all and (max-width: 1101px){
+    .foto-autor{
+        width: 480px;
+    }
 }
+
+@media all and (max-width: 990px){
+    .foto-autor{
+        width: 420px;
+    }
+
+    .paragrafo{
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 30;
+    }
+}
+
+@media all and (max-width: 768px){
+    .foto-autor{
+        width: 380px;
+    }
+
+    .paragrafo{
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 20;
+    }
+}
+
+@media all and (max-width: 505px){
+    .foto-autor{
+        width: 290px;
+    }
+}
+
+/* AREA TEXTO */
 
 .paragrafo{
     margin-top: 40px;
