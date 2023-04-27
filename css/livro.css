@@ -2,6 +2,50 @@
 
 /* AREA DO TITULO */
 
+@media all and (max-width: 1101px){
+    .livro-img{
+        width: 480px;
+    }
+}
+
+@media all and (max-width: 990px){
+    .livro-img{
+        width: 420px;
+    }
+
+    .paragrafo{
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 30;
+    }
+}
+
+@media all and (max-width: 768px){
+    .livro-img{
+        width: 380px;
+    }
+
+    .paragrafo{
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 20;
+    }
+}
+
+@media all and (max-width: 505px){
+    .livro-img{
+        width: 290px;
+    }
+}
+
+/* AREA TEXTO */
+
+.paragrafo{
+    margin-top: 40px;
+}
+
 #titulo-caixa{
     background-color: white;
     height: 130px;
@@ -30,17 +74,6 @@
     margin: 0px 57px 85px -35px;
 }
 
-#botao{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 57px;    
-}
-
-.btn-voltar-img{
-    height: 30px;
-    width: 132px;
-}
-
-.btn-voltar-img:hover{
-    filter: grayscale();
+.btn-voltar-atras{
+    float: right;   
 }

@@ -40,6 +40,41 @@
     --preto: rgb(0, 0, 0) !important;
 }
 
+/* BOTÕES */
+
+.btn-voltar{
+    background-image: url("../imgs/desktop/voltar1.svg");
+    border: none;
+    height: 30px;
+    width: 132px;
+}
+
+.btn-voltar:hover{
+    background-image: url("../imgs/desktop/voltar2.svg");
+}
+
+.btn-sabermais{
+    background-image: url("../imgs/desktop/sabermais1.svg");
+    border: none;
+    width: 120px;
+    height: 30px;    
+}
+
+.btn-sabermais:hover{
+    background-image: url("../imgs/desktop/sabermais2.svg");
+}
+
+.btn-vermais{
+    background-image: url("../imgs/desktop/vermais.svg");
+    border: none;
+    height: 30px;
+    width: 100px;
+}
+
+.btn-vermais:hover{
+    background-image: url("../imgs/desktop/vermais-cinza.svg");
+}
+
 /* CSS TEXTO */
 .t1{
     font-family: 'IBMPlexSans-Bold';
@@ -79,17 +114,6 @@
 .linha-cabecalho{
     border-top: 1px solid var(--cinza-70);
     margin-top: 10px;
-}
-
-.btn-sabermais{
-    background-image: url("../imgs/desktop/sabermais1.svg");
-    border: none;
-    width: 120px;
-    height: 30px;    
-}
-
-.btn-sabermais:hover{
-    background-image: url("../imgs/desktop/sabermais2.svg");
 }
 
 
@@ -135,6 +159,7 @@
     font-size: 13px;
     padding: 25px 15px 30px 15px;
     text-transform: uppercase;
+    max-width: 275px;
 }
 
 .dropdown-item:hover{

@@ -65,12 +65,14 @@
     margin-top: 40px;
 }
 
-.btn-voltar-img{
-    height: 30px;
-    margin-top: 60px;
-    width: 132px;
+.btn-vermais-autor{
+    margin-top: 40px;
 }
 
-.btn-voltar-img:hover{
-    filter: grayscale();
+.btn-voltar-autor{
+    margin-top: 20px;
 }
+
+
+
+
