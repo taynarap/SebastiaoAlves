@@ -1,15 +1,13 @@
 /*  AREA LIVRO  */
 
-/* AREA DO TITULO */
-
 @media all and (max-width: 1101px){
-    .livro-img{
+    #livro-img{
         width: 480px;
     }
 }
 
 @media all and (max-width: 990px){
-    .livro-img{
+    #livro-img{
         width: 420px;
     }
 
@@ -19,10 +17,21 @@
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 30;
     }
+
 }
 
 @media all and (max-width: 768px){
-    .livro-img{
+
+    #titulo{
+        margin-top: 45px !important;
+        margin-left: 45px !important;
+    }
+
+    #subtitulo{
+        margin-left: 45px !important; 
+    }
+
+    #livro-img{
         width: 380px;
     }
 
@@ -35,21 +44,29 @@
 }
 
 @media all and (max-width: 505px){
-    .livro-img{
+
+    #titulo{
+        margin-top: 35px !important;
+        margin-left: 35px !important;
+    }
+
+    #subtitulo{
+        margin-left: 35px !important;
+        margin-bottom: 25px;
+    }
+
+    #livro-img > img{
         width: 290px;
     }
 }
-
-/* AREA TEXTO */
 
 .paragrafo{
     margin-top: 40px;
 }
 
 #titulo-caixa{
-    background-color: white;
-    height: 130px;
-    margin-left: 90px;
+    background-color: var(--branco);
+    min-height: 130px;
     margin-top: -45px;
     margin-bottom: 65px;
     position: relative;
@@ -57,7 +74,7 @@
 }
 
 #titulo{
-    color: rgb(180, 125, 51);
+    color: var(--dourado-B4);
     font-size: 18px;
     margin-top: 50px;
     margin-left: 55px;
@@ -68,12 +85,7 @@
     margin-left: 55px;   
 }
 
-/* AREA DO LIVRO - TEXTO */
-
-#livro-paragrafo{
-    margin: 0px 57px 85px -35px;
-}
-
-.btn-voltar-atras{
-    float: right;   
+.btn-voltar-livro{
+    float: right !important;
+    margin-top: 40px;
 }

@@ -1,9 +1,35 @@
-/*  AREA TITULO  */
+/*  AREA IMPRENSA  */
+
+@media all and (max-width: 768px){
+
+    #titulo{
+        margin-top: 45px !important;
+        margin-left: 45px !important;
+    }
+
+    #subtitulo{
+        margin-left: 45px !important; 
+        padding-top: 15px;
+    }
+}
+
+@media all and (max-width: 505px){
+
+    #titulo{
+        margin-top: 35px !important;
+        margin-left: 35px !important;
+    }
+
+    #subtitulo{
+        margin-left: 35px !important;
+        margin-bottom: 25px;
+    }
+
+}
 
 #titulo-caixa{
-    background-color: white;
+    background-color: var(--branco);
     height: 130px;
-    margin-left: 90px;
     margin-top: -45px;
     margin-bottom: 65px;
     position: relative;
@@ -11,7 +37,7 @@
 }
 
 #titulo{
-    color: rgb(180, 125, 51);
+    color: var(--dourado-B4);
     font-size: 18px;
     margin-top: 50px;
     margin-left: 55px;
