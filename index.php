@@ -47,7 +47,7 @@ $pagina_atual = "home";
                     <img id="bemvindo-img" src="imgs/desktop/FOTO-editada.jpg" alt="Foto de Sebastião Alves">
                 </div>
 
-                <div class="col-md col-12 bemvindo-texto mx-md-5  px-0">
+                <div class="col-md col-12 bemvindo-texto mx-md-5 mt-5 px-0">
                     <div class="bemvindo-titulo t1">Bem-Vindo ao Meu Website</div>
 
                     <div class="bemvindo-paragrafo p">
@@ -110,22 +110,24 @@ $pagina_atual = "home";
 
                 <div class="col-12 col-12 d-flex justify-content-center gap-4 flex-wrap">
 
-                    <div class="card">
-                        <img src="imgs/desktop/livro1.jpg" class="card-img-top" alt="Livro Senhora do Amor e da Guerra">
-                        <div class="card-body">
-                            <h5 id="destaques-titulo" class="card-title t1">Senhora do Amor e da Guerra</h5>
-                            <p id="destaques-categoria" class="card-text">Novidade</p>
-                            <p id="destaques-paragrafo" class="card-text p">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Animi numquam ad maxime accusamus voluptatibus error molestiae at.
-                                doloribus voluptatem sequi quibusdam!</p>
-                            <div class="destaques-botao">
-                                <button class="btn-sabermais"></button>
+                    <?php foreach($livros as $chave => $l): ?>
+
+                        <a href="livro.php?livro=<?= $chave; ?>">
+                            <div class="card">
+                                <img src="<?= $l->imagem; ?>" class="card-img-top" alt="<?= $l->titulo; ?>">
+                                <div class="card-body">
+                                    <h5 id="destaques-titulo" class="card-title t1"><?= $l->titulo; ?></h5>
+                                    <p id="destaques-categoria" class="card-text">Novidade</p>
+                                    <p id="destaques-paragrafo" class="card-text p"><?= substr($l->texto, 0, 100); ?> ...</p>
+                                    <div class="destaques-botao">
+                                        <button class="btn-sabermais"></button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                    </a>
+                    <?php endforeach; ?>
 
-
-                    <div class="card">
+                    <!-- <div class="card">
                         <img src="imgs/desktop/livro2.jpg" class="card-img-top"
                             alt="Livro O Velho que Pensava que Fugia">
                         <div class="card-body">
@@ -154,7 +156,7 @@ $pagina_atual = "home";
                                 <button class="btn-sabermais"></button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

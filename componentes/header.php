@@ -1,8 +1,38 @@
+<?php
+
+require_once("GLOBAIS.php");
+
+?>
+
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sebastião Alves</title>
+
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+            crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/base.css">
+
+        <!--JQUERY-->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="px-0">
 <header class="container-fluid px-0 w-auto">
     <!-- TITULO -->
     <!--DESKTOP-->
     <div class="row w-100 mx-auto d-none d-sm-block" id="topo">
-
 
         <div class="col-12 d-flex justify-content-center cabecalho-titulo justify-content-center mt-5">
             Sebastião Alves</div>
@@ -129,18 +159,36 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" onclick="style">
+                                aria-expanded="false">
                                 Livros
                             </a>
                             <ul class="dropdown-menu my-4 shadow">
-                                <li><a class="dropdown-item pb-2" href="senhora_amor_guerra.html">Senhora Do
+
+                                <?php foreach($livros as $chave => $l): ?>
+                                    <?php
+
+                                        $submenu_active = false;
+                                        if($pagina_atual == "livro"){
+                                            if($_GET["livro"] == $chave){
+                                                $submenu_active = true;
+                                            }
+                                        }
+
+                                    ?>
+
+                                    <li>
+                                        <li><a class="dropdown-item pb-2 <?= ($submenu_active) ? "active" : ""; ?>" href="livro.php?livro=<?= $chave; ?>"><?= $l->titulo; ?></a>
+                                    </li>
+
+                                <?php endforeach; ?>
+                                <!-- <li><a class="dropdown-item pb-2" href="senhora_amor_guerra.html">Senhora Do
                                         Amor e Da Guerra</a>
                                 </li>
                                 <li><a class="dropdown-item pb-2" href="#">O Caracol Estrábico</a></li>
                                 <li><a class="dropdown-item pb-2" href="#">O Coleccionador de
                                         Amnésias</a></li>
                                 <li><a class="dropdown-item" href="#">O Velho que Pensava que Fugia</a>
-                                </li>
+                                </li> -->
                             </ul>
                         </li>
                         <li class="nav-item">

@@ -4,6 +4,10 @@ require_once("GLOBAIS.php");
 
 $pagina_atual = "livro";
 
+if(isset($livro[$_GET["livro"]])){
+        $livro_especifico = $livro[$_GET["livro"]];
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -12,7 +16,7 @@ $pagina_atual = "livro";
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Senhora do Amor e da Guerra</title>
+        <title></title>
 
         <!-- BOOTSTRAP -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -42,7 +46,7 @@ $pagina_atual = "livro";
 
                     <div class="col menu-selecionado">
                         <div id="titulo" class="t1">Livros</div>
-                        <div id="subtitulo" class="t1">Senhora do Amor e da Guerra</div>
+                        <div id="subtitulo" class="t1"><?= $livro_especifico->titulo; ?></div>
                     </div>
                 </div>
             </div>
@@ -52,33 +56,14 @@ $pagina_atual = "livro";
                 <div id="livro-caixa" class="row">
 
                     <div id="livro-img" class="col-auto mx-auto w-auto">
-                        <img src="imgs/desktop/livro-conteudo.jpg" alt="Livro Senhora do Amor e da Guerra">
+                        <img src="<?= $livro_especifico->imagem; ?>" alt="<?= $livro_especifico->titulo; ?>">
                     </div>
 
                     <div class="col-lg-7 col-12 livro-texto">
 
                         <div id="livro-paragrafo" class="p px-3 px-sm-1 mt-lg-0 mt-5">
-                            Uruk, Mesopotâmia, 3000 a.C. Séculos antes do famoso Gilgamesh, uma bela mulher aparece a
-                            comandar
-                            os destinos da maior cidade do mundo. <br>
-                            Sete extraordinárias plaquetas de barro cozido sugerem a sua história: a inteligência, a
-                            coragem, o poder
-                            de sedução que a conduzem ao poder vencendo todas as adversidades; a luta contra a corrupção
-                            dos sacerdotes
-                            de Inanna; a vitória sobre os invasores amorritas; e finalmente o dia em que embarca para o
-                            reino das
-                            trevas, vitimada pela pestilência, após inundações que cobriram a terra como após
-                            um dilúvio bíblico...
-                            <br><br>
-                            As plaquetas chegam-nos assinadas por Zamug, o Coxo, que abandonou a cidade
-                            maldita levando consigo os ensinamentos de Nisaba, ou seja, o segredo da
-                            escrita.
-                            <br><br><br>
-
-                            Edição: Junho de 2020 <br>
-                            Dimensões: 150 x 230 x 10mm <br>
-                            Encadernação: Capa mole <br>
-                            Páginas: 240
+                           
+                            <?= $livro_especifico->texto; ?>
 
                         </div>
 
