@@ -133,7 +133,7 @@
   
 .navbar-toggler[aria-expanded="true"] > .navbar-toggler-icon {
     background-image: url("../imgs/desktop/fechar.svg") !important;
-  }
+}
 
 .nav-link{
     color: var(--cinza-4D);
