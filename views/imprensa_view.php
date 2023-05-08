@@ -13,96 +13,44 @@
     </div>
 
     <!-- ULTIMAS NOTICIAS -->
-    <div id="noticia-area" class="container">
-        <div id="noticia-caixa" class="row d-flex justify-content-center">
-            <div class="col-10">
+    <?php foreach ($imprensa as $i) : ?>
+        <div id="noticia-area" class="container">
+            <div id="noticia-caixa" class="row d-flex justify-content-center">
+                <div class="col-10">
 
-                <div class="row">
-                    <div class="t1 px-0">
-                        Lançamento | Senhora do Amor e da Guerra
+                    <div class="row">
+                        <div class="t1 px-0">
+                            Lançamento | <?= $i["titulo"]; ?>
+                        </div>
+
+                        <div class="linha-lancamento"></div>
+
                     </div>
 
-                    <div class="linha-lancamento"></div>
-
-                </div>
-
-                <div class="row d-flex justify-content-end data-publicacao">
-                    Publicado a 17 Junho 2020
-                </div>
-
-                <div id="livro-img">
-                    <img class="w-100" src="imgs/desktop/conteudo-imprensa1.jpg"
-                        alt="Livro Senhora do Amor e da Guerra">
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid caixa-separadora"></div>
-
-    <div id="noticia-area" class="container">
-        <div id="noticia-caixa" class="row d-flex justify-content-center">
-            <div class="col-10">
-
-                <div class="row">
-                    <div class="t1 px-0">
-                        Lançamento Do Livro "O Velho que pensava que fugia"
+                    <div class="row d-flex justify-content-end data-publicacao">
+                        <?= $i["data_publicacao"]; ?>
                     </div>
 
-                    <div class="linha-lancamento mx-auto"></div>
+                    <div id="livro-img">
+                        <img class="w-100" src="<?= $i["imagem"]; ?>" alt="Livro Senhora do Amor e da Guerra">
+                    </div>
 
                 </div>
-
-                <div class="row d-flex justify-content-end data-publicacao">
-                    Publicado a 6 Dezembro 2017
-                </div>
-
-                <div id="livro-img">
-                    <img class="w-100" src="imgs/desktop/conteudo-imprensa2.jpg"
-                        alt="Livro O Velho que Pensava que Fugia">
-                </div>
-
-                <div class="d-block p pt-5">
-                    Terá lugar no dia 6 de dezembro, pelas 18h10, no Anfiteatro Abreu Faro, a sessão de
-                    Lançamento
-                    do livro "O velho que pensava que fugia", de Sebastião Alves. <br>
-                    Nesta sessão o autor irá ler algumas das passagens do livro. <br>
-                    "Às quatro da madrugada, que faz um homam de oitenta e três anos escondido entre os
-                    eucaliptos? <br>
-                    De que foge? Que procura? Quem o persegue? <br>
-                    Onde irá ele arranjar dinheiro para hotéis, táxis, comboios, autocarros? <br>
-                    Porque elege para refúgio esse remoto lugar de romagem onde uma Virgem Negra acolhe
-                    peregrinos desde
-                    a Idade Média? <br>
-                    E que dilema o vem finalmente surpreender, quando pensava ter descoberto a paz e mesmo
-                    reencontrado amor?" <br>
-                    "Sebastião Alves nasceu em Lisboa, em 1954. Formou-se em engenharia química pela
-                    Universidade
-                    de Birmingham, Reino Unido. Professor no Instituto Superior Técnico, é casado e tem duas
-                    filhas.
-                    Outras obras publicadas: O caracol estrábico (contos), Chiado Editora, 2011."
-                    <br><br>
-                    Notícia de Técnico Lisboa <br>
-                    https://tecnico.ulisboa.pt/pt/eventos/lancamento-do-livro-o-velho-que-pensava-que-fugia/
-                </div>
-
-
             </div>
         </div>
-    </div>
+
+        <div class="container-fluid caixa-separadora"></div>
+    <?php endforeach; ?>
+
+    <!-- <?php require_once("templates/paginacao.php"); ?> -->
 
     <nav aria-label="Page navigation example">
         <ul class="pagination">
-            <li class="page-item setas s-esquerda me-5"><img src="imgs/desktop/setaesquerda1.svg"
-                    onmouseover="this.src='imgs/desktop/setaesquerda2.svg'"
-                    onmouseout="this.src='imgs/desktop/setaesquerda1.svg'" alt="Página Anterior"></li>
+            <li class="page-item setas s-esquerda me-5"><img src="imgs/desktop/setaesquerda1.svg" onmouseover="this.src='imgs/desktop/setaesquerda2.svg'" onmouseout="this.src='imgs/desktop/setaesquerda1.svg'" alt="Página Anterior"></li>
             <li class="page-item"><a class="page-link num me-2 active" href="#">1</a></li>
             <li class="page-item"><a class="page-link num me-2" href="#">2</a></li>
             <li class="page-item"><a class="page-link num" href="#">3</a></li>
-            <li class="page-item setas s-direita ms-5"><img src="imgs/desktop/setadireita1.svg"
-                    onmouseover="this.src='imgs/desktop/setadireita2.svg'"
-                    onmouseout="this.src='imgs/desktop/setadireita1.svg'" alt="Página Seguinte"></li>
+            <li class="page-item setas s-direita ms-5"><img src="imgs/desktop/setadireita1.svg" onmouseover="this.src='imgs/desktop/setadireita2.svg'" onmouseout="this.src='imgs/desktop/setadireita1.svg'" alt="Página Seguinte"></li>
         </ul>
     </nav>
 

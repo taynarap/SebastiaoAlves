@@ -3,7 +3,7 @@
     require_once("requisitos.php");
 
     //Globais
-    $autor = getTudoAutor();
+    $autor = getAutor();
     $home = getTudoHome();
     $livro_destaque = getDestaque();
     

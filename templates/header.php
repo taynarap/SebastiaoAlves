@@ -60,8 +60,6 @@ $carousel = getTodosCarousel();
                                 </a>
                                 <ul class="dropdown-menu shadow">
                                     <?php foreach ($livros as $l) : ?>
-
-
                                         <li><a class="dropdown-item  <?= ($rotas[0] == "livro" && $rotas[1] == $l["id"]) ? "active" : ""; ?>" href="<?= $url_base; ?>livro/<?= $l["id"]; ?>"><?= $l["titulo"] ?></a></li>
                                     <?php endforeach; ?>
                                 </ul>
@@ -102,7 +100,7 @@ $carousel = getTodosCarousel();
             </div>
             <div class="carousel-inner">
 
-                <?php foreach($carousel as $chave =>$c): ?>
+                <?php foreach ($carousel as $chave => $c) : ?>
                     <div class="carousel-item <?= ($chave == 0) ? "active" : ""; ?>">
                         <img src="<?= $c["img_desktop"]; ?>" class="cabecalho-img d-block w-100" alt="Banner">
                         <div class="carousel-caption d-none d-md-block">

@@ -7,7 +7,7 @@
 
             <div class="col menu-selecionado">
                 <div id="titulo" class="t1">Livros</div>
-                <div id="subtitulo" class="t1"><?= $livro_especifico->titulo; ?></div>
+                <div id="subtitulo" class="t1"><?= $livro_especifico["titulo"]; ?></div>
             </div>
         </div>
     </div>
@@ -17,14 +17,14 @@
         <div id="livro-caixa" class="row">
 
             <div id="livro-img" class="col-auto mx-auto w-auto">
-                <img src="<?= $livro_especifico->imagem; ?>" alt="<?= $livro_especifico->titulo; ?>">
+                <img src="<?= $livro_especifico["imagem"]; ?>" alt="<?= $livro_especifico["titulo"]; ?>">
             </div>
 
             <div class="col-lg-7 col-12 livro-texto">
 
                 <div id="livro-paragrafo" class="p px-3 px-sm-1 mt-lg-0 mt-5">
-                    
-                    <?= $livro_especifico->texto; ?>
+
+                    <?= $livro_especifico["texto"]; ?>
 
                 </div>
 

@@ -1,5 +1,5 @@
 <?php
 
-function getTudoAutor(){
+function getAutor(){
     return selectSQLUnico("SELECT * FROM autor");
 }

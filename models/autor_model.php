@@ -3,6 +3,9 @@
     //Importacoes
     require_once("requisitos.php");
 
+    //Globais
+    $autor = getAutor();
+
     //NAVBAR/CAROUSEL
     require_once("templates/header.php");
 

@@ -19,62 +19,10 @@
 
             <div class="col-12">
 
-                <img class="d-block mx-auto foto-autor" src="imgs/desktop/conteudo.jpg" alt="Fotografia Sebastião Alves">
+                <img class="d-block mx-auto foto-autor" src="<?= $autor["imagem"]; ?>" alt="Fotografia Sebastião Alves">
 
                 <p class="p paragrafo px-3 px-sm-1">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, suscipit. Quibusdam
-                    labore in porro veritatis ullam magnam voluptates excepturi rem molestiae, tempore nulla
-                    voluptate quas asperiores inventore id, magni maxime ab! Vitae, ut. Cum accusantium
-                    asperiores itaque quos doloremque velit rem a totam et repudiandae rerum commodi iure,
-                    impedit consequatur!
-                    <br><br>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maiores enim
-                    tempore quia veniam maxime earum deserunt sapiente illum cum nulla, aperiam quae animi
-                    provident repudiandae nesciunt, dignissimos nam! Commodi nihil porro eveniet quas magni
-                    voluptatem laboriosam odit maxime nemo minima, beatae tenetur, perferendis vero molestiae
-                    saepe laborum et sapiente? Quaerat at quod voluptate voluptatibus possimus nulla ipsa
-                    corporis autem repellat animi. Cupiditate voluptas et illo dignissimos. Eligendi dolorum
-                    velit voluptate quisquam minus culpa vero ea, voluptatum, eum aliquam ullam quasi excepturi
-                    aspernatur delectus voluptates, quaerat tempore nam ducimus iste. Dicta, esse quas corrupti
-                    fugit adipisci repellat est id magnam aut sunt inventore molestias expedita impedit
-                    consequuntur nostrum excepturi obcaecati voluptatum aliquam magni necessitatibus ab.
-                    Aspernatur sed repudiandae molestias atque facilis amet eius libero maiores nulla? Ullam
-                    quae nam doloribus, rerum autem nobis a. Incidunt cupiditate praesentium odit cumque
-                    repudiandae aut optio commodi eum autem esse quod qui, quae iste enim quisquam et, ipsa
-                    temporibus ea quibusdam cum laboriosam. Voluptates consectetur nihil nesciunt nobis ipsam
-                    dolore consequuntur facere ipsa. Eaque, voluptatum. Blanditiis similique, dolor molestiae
-                    sunt commodi nam expedita officia atque a perspiciatis sit mollitia, dolore temporibus
-                    distinctio molestias tenetur accusantium eos? Libero pariatur aliquam, repellat corrupti
-                    consequatur ipsa animi.
-                    <br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ab velit ut, modi
-                    impedit dignissimos ad laboriosam eaque perferendis est exercitationem dolorem amet,
-                    suscipit adipisci, tempora porro expedita nemo eos reiciendis quisquam vel odit.
-                    Voluptatibus quasi assumenda possimus dolorum harum debitis officia? Itaque eos ut, tempore
-                    dolor rerum non quis.
-                    <br><br>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit voluptatem, quae similique
-                    repellendus animi ipsum. Eveniet alias molestiae, ipsum commodi expedita vitae, vel eos
-                    iusto officiis sequi fugit illum quibusdam quia consequuntur impedit asperiores. Optio,
-                    magnam ad! Commodi nulla reiciendis, quam temporibus itaque alias ullam nihil fuga
-                    repudiandae quae doloremque distinctio enim atque. Reiciendis dolore sed nisi! Provident eum
-                    porro est. Nemo, impedit ipsa! Quidem facilis fuga nesciunt deserunt hic saepe nisi sint
-                    explicabo. Eligendi odit sequi ad nihil nam, debitis accusantium laborum soluta, quibusdam
-                    at similique porro possimus id adipisci reprehenderit asperiores a blanditiis fugit atque
-                    mollitia necessitatibus deserunt.
-                    <br><br>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit atque molestiae velit fuga
-                    tenetur, officiis porro voluptate eius possimus architecto deserunt modi? Quos nulla eum
-                    sunt maiores reprehenderit? Non velit omnis provident laudantium labore dolorem perferendis
-                    voluptate magni a, aperiam iusto cum quas minus, commodi est pariatur tempore aspernatur
-                    excepturi accusamus, at reprehenderit iure possimus. Dicta tenetur facere iusto non nemo
-                    odit consequuntur deleniti maiores in aliquam aut, dolorum quis repellat, perferendis,
-                    necessitatibus qui quibusdam laborum quidem nobis perspiciatis optio est. Quis ducimus
-                    laudantium sit labore ipsam est, voluptate excepturi quos inventore necessitatibus
-                    aspernatur eos pariatur non nihil ad libero perferendis nesciunt harum, ut quidem at
-                    officiis reiciendis dolores. Magni, unde at repellendus corporis in omnis maxime excepturi
-                    nemo laboriosam!
-
+                    <?= $autor["texto"]; ?>
                 </p>
 
                 <a class="d-flex d-sm-none justify-content-center" href="...">
