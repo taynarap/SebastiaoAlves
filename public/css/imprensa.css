@@ -87,18 +87,32 @@
     color: rgb(177, 126, 51);
 }
 
-.page-link.num{
-    color: rgb(77, 77, 77);
+.btn-pagina{
+    background-color: white !important;
+    border: none !important;
+    color: var(--cinza-4D);
     font-family: 'IBMPlexSans-Medium';
     font-size: 23px;
 }
 
-.page-link.active{
-    background-color: white;
+.btn-pagina.active{
     color: rgb(177, 126, 51);
 }
 
-.page-link.setas>img{
+.btn-imprensa-esq{
+    background-color: white !important;
+    background-image: url("../imgs/desktop/setaesquerda1.svg");
+    border: none !important;
     height: 30px;
+    margin-right: 40px;
     width: 17px;
+}
+
+.btn-imprensa-dir{
+    background-color: white !important;
+    background-image: url("../imgs/desktop/setadireita1.svg");
+    border: none !important;
+    height: 30px;
+    margin-left: 40px;
+    width: 17px; 
 }

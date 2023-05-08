@@ -23,7 +23,7 @@
                 </div>
 
                 <div class="contactos-texto-main">
-                    +351 123 456 789
+                    
                 </div>
             </div>
 
@@ -32,8 +32,7 @@
                     Morada
                 </div>
                 <div class="contactos-texto-main">
-                    Lorem ipsum dolor sit amet, 12 <br>
-                    1234-543 Lorem
+                   
                 </div>
             </div>
 
@@ -42,7 +41,7 @@
                     Email
                 </div>
                 <div class="contactos-texto-main">
-                    lorem@lorem.pt
+                   
                 </div>
             </div>
 
@@ -56,7 +55,7 @@
                     Horário
                 </div>
                 <div class="contactos-texto-main">
-                    De Segunda a Sexta das 00:00h às 00:00h
+                    
                 </div>
             </div>
 

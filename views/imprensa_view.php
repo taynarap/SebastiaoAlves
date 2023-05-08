@@ -42,8 +42,8 @@
         <div class="container-fluid caixa-separadora"></div>
     <?php endforeach; ?>
 
-    <!-- <?php require_once("templates/paginacao.php"); ?> -->
-
+    <?php require_once("templates/paginacao.php"); ?>
+<!-- 
     <nav aria-label="Page navigation example">
         <ul class="pagination">
             <li class="page-item setas s-esquerda me-5"><img src="imgs/desktop/setaesquerda1.svg" onmouseover="this.src='imgs/desktop/setaesquerda2.svg'" onmouseout="this.src='imgs/desktop/setaesquerda1.svg'" alt="Página Anterior"></li>
@@ -52,6 +52,6 @@
             <li class="page-item"><a class="page-link num" href="#">3</a></li>
             <li class="page-item setas s-direita ms-5"><img src="imgs/desktop/setadireita1.svg" onmouseover="this.src='imgs/desktop/setadireita2.svg'" onmouseout="this.src='imgs/desktop/setadireita1.svg'" alt="Página Seguinte"></li>
         </ul>
-    </nav>
+    </nav> -->
 
 </main>
