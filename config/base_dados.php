@@ -1,12 +1,5 @@
 <?php
 
-$base_dados = [
-    "dbname" => "sebastiaoalves_bd",
-    "host" => "localhost",
-    "user" => "root",
-    "password" => ""
-];
-
 $pdo = new PDO("mysql:dbname=".$base_dados["dbname"].";host=".$base_dados["host"], $base_dados["user"], $base_dados["password"]);
 
 function selectSQL($sql){
