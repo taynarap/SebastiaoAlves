@@ -8,11 +8,11 @@
 
     <div id="menu-rodape-area">
 
-        <a class="menu-rodape active" href="index.html">HOME</a>
-        <a class="menu-rodape" href="autor.html">AUTOR</a>
-        <a class="menu-rodape" href="">LIVROS</a>
-        <a class="menu-rodape" href="imprensa.html">IMPRENSA</a>
-        <a class="menu-rodape" href="contactos.html">CONTACTOS</a>
+        <a class="menu-rodape active" href="">HOME</a>
+        <a class="menu-rodape" href="autor">AUTOR</a>
+        <a class="menu-rodape" href="livro">LIVROS</a>
+        <a class="menu-rodape" href="imprensa">IMPRENSA</a>
+        <a class="menu-rodape" href="contactos">CONTACTOS</a>
 
     </div>
 
@@ -68,9 +68,9 @@
 
 
                 <div class="reclamacoes-ralc">
-                    <a class="reclamacoes me-5" href=""> <img src="imgs/desktop/livroreclamacoes.svg"
+                    <a class="reclamacoes me-5" href=""> <img src=<?= $url_base ."/public/imgs/desktop/livroreclamacoes.svg"; ?>
                             alt="Livro de Reclamações"></a>
-                    <a class="ralc" href=""> <img src="imgs/desktop/ralc.svg"
+                    <a class="ralc" href=""> <img src=<?= $url_base ."/public/imgs/desktop//ralc.svg"; ?>
                             alt="Resolução Alternativa de Litígios de Consumo"></a>
                 </div>
 

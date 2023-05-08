@@ -1,12 +1,18 @@
 <?php
+    //Importacoes
+    require_once("requisitos.php");
+
+    //Globais
+    $autor = getTudoAutor();
+    $home = getTudoHome();
+    $livro_destaque = getDestaque();
+    
 
     //NAVBAR/CAROUSEL
-    require_once("componentes/header.php");
+    require_once("templates/header.php");
 
     //MAIN
     require_once("views/home_view.php");
 
     //RODAPE
-    require_once("componentes/footer.php");
-
-?>
+    require_once("templates/footer.php");
