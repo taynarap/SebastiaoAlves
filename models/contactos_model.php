@@ -1,5 +1,11 @@
 <?php
 
+    //Importacoes
+    require_once("requisitos.php");
+
+    //Globais
+    $contactos = getContactos();
+
     //NAVBAR/CAROUSEL
     require_once("templates/header.php");
 

@@ -44,11 +44,11 @@
                 <?php for ($i = 0; $i < 3; $i++) : ?>
                     <?php $l = $livro_destaque[$i]; ?>
                     <div class="card">
-                        <img src="<?= $l["imagem"]; ?>" class="imagem-cards" alt="livro1">
+                        <img src="<?= $l["imagem"]; ?>" alt="livro1">
                         <div class="card-body">
                             <div id="destaques-titulo"><?= $l["titulo"]; ?></div>
-                            <div id="destaques-categoria"><?= $l["observacao"]; ?></div>
-                            <div id="destaques-paragrafo">
+                            <div id="destaques-categoria" class="mt-2"><?= $l["observacao"]; ?></div>
+                            <div id="destaques-paragrafo" class="mt-2">
                                 <?= substr($l["texto"], 0, 100); ?>...
                             </div>
                             <div class="destaques-botao">

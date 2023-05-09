@@ -23,7 +23,7 @@
                 </div>
 
                 <div class="contactos-texto-main">
-                    
+                    <?= $contactos["telefone"]; ?>
                 </div>
             </div>
 
@@ -32,7 +32,7 @@
                     Morada
                 </div>
                 <div class="contactos-texto-main">
-                   
+                    <?= $contactos["morada"]; ?>
                 </div>
             </div>
 
@@ -41,7 +41,7 @@
                     Email
                 </div>
                 <div class="contactos-texto-main">
-                   
+                    <?= $contactos["email"]; ?>
                 </div>
             </div>
 
@@ -55,7 +55,7 @@
                     Horário
                 </div>
                 <div class="contactos-texto-main">
-                    
+                    <?= $contactos["horario"]; ?>
                 </div>
             </div>
 

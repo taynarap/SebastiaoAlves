@@ -19,15 +19,16 @@ $carousel = getTodosCarousel();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href=<?= $url_base . "/public/css/base.css"; ?>>
-    <link rel="stylesheet" href="<?= ($rotas[0] == "") ? $url_base . "/public/css/home.css" : ""; ?>">
-    <link rel="stylesheet" href="<?= ($rotas[0] == "autor") ? $url_base . "/public/css/autor.css" : ""; ?>">
-    <link rel="stylesheet" href="<?= ($rotas[0] == "livro") ? $url_base . "/public/css/livro.css" : ""; ?>">
-    <link rel="stylesheet" href="<?= ($rotas[0] == "imprensa") ? $url_base . "/public/css/imprensa.css" : ""; ?>">
-    <link rel="stylesheet" href="<?= ($rotas[0] == "contactos") ? $url_base . "/public/css/contactos.css" : ""; ?>">
+    <link rel="stylesheet" href=<?= $url_base . "public/css/base.css"; ?>>
+    <link rel="stylesheet" href="<?= ($rotas[0] == "") ? $url_base . "public/css/home.css" : ""; ?>">
+    <link rel="stylesheet" href="<?= ($rotas[0] == "autor") ? $url_base . "public/css/autor.css" : ""; ?>">
+    <link rel="stylesheet" href="<?= ($rotas[0] == "livro") ? $url_base . "public/css/livro.css" : ""; ?>">
+    <link rel="stylesheet" href="<?= ($rotas[0] == "imprensa") ? $url_base . "public/css/imprensa.css" : ""; ?>">
+    <link rel="stylesheet" href="<?= ($rotas[0] == "contactos") ? $url_base . "public/css/contactos.css" : ""; ?>">
 
     <!--JQUERY-->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="js/funcoes.js"></script>
 </head>
 
 <body class="px-0">
@@ -55,12 +56,12 @@ $carousel = getTodosCarousel();
                                 <a class="nav-link <?= ($rotas[0] == "autor") ? "active" : ""; ?>" href="<?= $url_base; ?>autor">Autor</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link <?= ($rotas[0] == "livro") ? "active" : ""; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a id="menu-principal" class="nav-link <?= ($rotas[0] == "livro") ? "active" : ""; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Livros
                                 </a>
                                 <ul class="dropdown-menu shadow">
                                     <?php foreach ($livros as $l) : ?>
-                                        <li><a class="dropdown-item  <?= ($rotas[0] == "livro" && $rotas[1] == $l["id"]) ? "active" : ""; ?>" href="<?= $url_base; ?>livro/<?= $l["id"]; ?>"><?= $l["titulo"] ?></a></li>
+                                        <li><a class="dropdown-item submenu <?= ($rotas[0] == "livro" && $rotas[1] == $l["id"]) ? "active" : ""; ?>" href="<?= $url_base; ?>livro/<?= $l["id"]; ?>"><?= $l["titulo"] ?></a></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
@@ -80,7 +81,7 @@ $carousel = getTodosCarousel();
 
         <!-- AREA BANNER  -->
 
-        <div id="area-banner" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
+        <div id="area-banner" class="carousel slide w-100 d-none d-sm-block px-0" data-bs-ride="carousel">
             <div class="carousel-indicators">
 
                 <?php foreach ($carousel as $chave => $banner) : ?>
@@ -102,14 +103,14 @@ $carousel = getTodosCarousel();
 
                 <?php foreach ($carousel as $chave => $c) : ?>
                     <div class="carousel-item <?= ($chave == 0) ? "active" : ""; ?>">
-                        <img src="<?= $c["img_desktop"]; ?>" class="cabecalho-img d-block w-100" alt="Banner">
-                        <div class="carousel-caption d-none d-md-block">
+                        <img src="<?= $c["img_desktop"]; ?>" class="banner-imagem w-100 d-block" alt="Banner">
+                        <div class="carousel-caption d-none d-sm-block">
                             <div class="banner-novidade"><?= $c["observacao"]; ?></div>
                             <div class="banner-titulo col-5 mt-2"><?= $c["titulo"]; ?></div>
                             <div class="banner-texto col-7 mt-2">
-                                <?= substr($c["texto"], 0, 250); ?>...
+                                <?= substr($c["texto"], 0, 200); ?>...
                             </div>
-                            <div class="banner-sabermais mt-4">
+                            <div class="banner-sabermais">
                                 <a href="<?= $c["saber_mais"]; ?>">
                                     <button class="btn-sabermais"></button>
                                 </a>
@@ -152,23 +153,8 @@ $carousel = getTodosCarousel();
                                     Livros
                                 </a>
                                 <ul class="dropdown-menu my-4 shadow">
-
-                                    <?php foreach ($livros as $chave => $l) : ?>
-                                        <?php
-
-                                        $submenu_active = false;
-                                        if ($pagina_atual == "livro") {
-                                            if ($_GET["livro"] == $chave) {
-                                                $submenu_active = true;
-                                            }
-                                        }
-
-                                        ?>
-
-                                        <li>
-                                        <li><a class="dropdown-item pb-2 <?= ($submenu_active) ? "active" : ""; ?>" href="livro.php?livro=<?= $chave; ?>"><?= $l->titulo; ?></a>
-                                        </li>
-
+                                    <?php foreach ($livros as $l) : ?>
+                                        <li><a class="dropdown-item <?= ($rotas[0] == "livro" && $rotas[1] == $l["id"]) ? "active" : ""; ?>" href="<?= $url_base; ?>livro/<?= $l["id"]; ?>"><?= $l["titulo"] ?></a></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
@@ -212,14 +198,14 @@ $carousel = getTodosCarousel();
                 <?php for ($i = 0; $i < count($carousel); $i++) : ?>
                     <?php $c = $carousel[$i]; ?>
                     <div class="carousel-item <?= ($i == 0) ? "active" : ""; ?>">
-                        <img src="<?= $c["img_mobile"]; ?>" class="cabecalho-img d-block w-100" alt="cabecalho1">
+                        <img src="<?= $c["img_mobile"]; ?>" class="banner-imagem d-block w-100" alt="cabecalho1">
                         <div class="carousel-caption d-block d-md-none">
                             <div class="banner-novidade"><?= $c["observacao"]; ?></div>
                             <div class="banner-titulo col-12 mt-2"><?= $c["titulo"]; ?></div>
                             <div class="banner-texto col-12 mt-2">
-                                <?= substr($c["texto"], 0, 200); ?>...
+                                <?= substr($c["texto"], 0, 100); ?>...
                             </div>
-                            <div class="banner-sabermais mt-5 pt-4">
+                            <div class="banner-sabermais">
                                 <a href="<?= $c["saber_mais"]; ?>">
                                     <button class="btn-sabermais"></button>
                                 </a>

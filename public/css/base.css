@@ -162,6 +162,11 @@
     max-width: 275px;
 }
 
+.dropdown-item.active{
+    background-color: var(--branco) !important;
+    color: var(--dourado-B4);
+}
+
 .dropdown-item:hover{
     background-color: var(--branco);
     color: var(--dourado-B4);
@@ -180,12 +185,11 @@
 
 #area-banner{
     font-family: 'IBMPlexSans-Light';
-    max-width: 100vw;
+    height: 730px;
 }
 
 .banner-imagem{
-    width: 1280px;
-    height:730px;
+    height: 730px;
 }
 
 .carousel-caption{
@@ -302,9 +306,8 @@
     }
 
     .banner-imagem{
-        display: flex;
         margin: auto;
-        height: 760px;
+        max-height: 760px !important;
         width: 360px;
     }
 

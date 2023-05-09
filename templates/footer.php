@@ -1,3 +1,14 @@
+<?php
+
+//Importacoes
+require_once("requisitos.php");
+
+//Globais
+$contactos = getContactos();
+$sociais = getSociais();
+
+?>
+
 <!-- DESKTOP  -->
 
 <!-- BARRA DE MENUS -->
@@ -8,11 +19,11 @@
 
     <div id="menu-rodape-area">
 
-        <a class="menu-rodape active" href="">HOME</a>
-        <a class="menu-rodape" href="autor">AUTOR</a>
-        <a class="menu-rodape" href="livro">LIVROS</a>
-        <a class="menu-rodape" href="imprensa">IMPRENSA</a>
-        <a class="menu-rodape" href="contactos">CONTACTOS</a>
+        <a class="menu-rodape <?= ($rotas[0] == "") ? "active" : ""; ?>" href="<?= $url_base; ?> ">HOME</a>
+        <a class="menu-rodape <?= ($rotas[0] == "autor") ? "active" : ""; ?>" href="<?= $url_base; ?>autor">AUTOR</a>
+        <a class="menu-rodape <?= ($rotas[0] == "livro") ? "active" : ""; ?>" href="#menu-principal" onclick="submenu()">LIVROS</a>
+        <a class="menu-rodape <?= ($rotas[0] == "imprensa") ? "active" : ""; ?>" href="<?= $url_base; ?>imprensa">IMPRENSA</a>
+        <a class="menu-rodape <?= ($rotas[0] == "contactos") ? "active" : ""; ?>" href="<?= $url_base; ?>contactos">CONTACTOS</a>
 
     </div>
 
@@ -68,10 +79,8 @@
 
 
                 <div class="reclamacoes-ralc">
-                    <a class="reclamacoes me-5" href=""> <img src=<?= $url_base ."/public/imgs/desktop/livroreclamacoes.svg"; ?>
-                            alt="Livro de Reclamações"></a>
-                    <a class="ralc" href=""> <img src=<?= $url_base ."/public/imgs/desktop//ralc.svg"; ?>
-                            alt="Resolução Alternativa de Litígios de Consumo"></a>
+                    <a class="reclamacoes me-5" href=""> <img src=<?= $url_base . "/public/imgs/desktop/livroreclamacoes.svg"; ?> alt="Livro de Reclamações"></a>
+                    <a class="ralc" href=""> <img src=<?= $url_base . "/public/imgs/desktop/ralc.svg"; ?> alt="Resolução Alternativa de Litígios de Consumo"></a>
                 </div>
 
             </div>
@@ -85,12 +94,9 @@
             </div>
 
             <div class="redes-icons">
-                <a class="icon-item me-4" href=""> <img src="imgs/desktop/instagram1.svg"
-                        alt="Icon Instagram"></a>
-                <a class="icon-item me-4" href=""> <img src="imgs/desktop/facebook1.svg"
-                        alt="Icon Facebook"></a>
-                <a class="icon-item me-4" href=""> <img src="imgs/desktop/linkedin1.svg"
-                        alt="Icon LinkedIn"></a>
+                <a class="icon-item me-4" href=""> <img src="<?= $sociais["instagram"]; ?>" alt="Icon Instagram"></a>
+                <a class="icon-item me-4" href=""> <img src="<?= $sociais["facebook"]; ?>" alt="Icon Facebook"></a>
+                <a class="icon-item me-4" href=""> <img src="<?= $sociais["linkedin"]; ?>" alt="Icon LinkedIn"></a>
             </div>
 
             <div class="redes-copyright p">
@@ -109,7 +115,7 @@
 
     <div class="row d-flex justify-content-center text-center d-block d-md-none">
 
-        <div class="col-12 mx-auto <?=($pagina_atual == "contactos") ? "d-none" : ""; ?>">
+        <div class="col-12 mx-auto <?= ($rotas[0] == "contactos") ? "d-none" : ""; ?>">
 
             <div class="row">
 
@@ -158,21 +164,16 @@
             </div>
 
             <div class="redes-icons">
-                <a class="icon-item me-4" href=""> <img src="imgs/desktop/instagram1.svg"
-                        alt="Icon Instagram"></a>
-                <a class="icon-item me-4" href=""> <img src="imgs/desktop/facebook1.svg"
-                        alt="Icon Facebook"></a>
-                <a class="icon-item me-4" href=""> <img src="imgs/desktop/linkedin1.svg"
-                        alt="Icon LinkedIn"></a>
+                <a class="icon-item me-4" href="#"> <img src="<?= $sociais["instagram"]; ?>" alt="Icon Instagram"></a>
+                <a class="icon-item me-4" href="#"> <img src="<?= $sociais["facebook"]; ?>" alt="Icon Facebook"></a>
+                <a class="icon-item me-4" href="#"> <img src="<?= $sociais["linkedin"]; ?>" alt="Icon LinkedIn"></a>
             </div>
 
         </div>
 
         <div class="reclamacoes-ralc">
-            <a class="reclamacoes me-5" href=""> <img src="imgs/desktop/livroreclamacoes.svg"
-                    alt="Livro de Reclamações"></a>
-            <a class="ralc" href=""> <img src="imgs/desktop/ralc.svg"
-                    alt="Resolução Alternativa de Litígios de Consumo"></a>
+            <a class="reclamacoes me-5" href=""> <img src=<?= $url_base . "/public/imgs/desktop/livroreclamacoes.svg"; ?> alt="Livro de Reclamações"></a>
+            <a class="ralc" href=""> <img src=<?= $url_base . "/public/imgs/desktop/ralc.svg"; ?> alt="Resolução Alternativa de Litígios de Consumo"></a>
         </div>
 
         <div class="col-9 redes-copyright p">
@@ -183,3 +184,4 @@
     </div>
 
 </footer>
+<script src="js/funcoes.js"></script>
