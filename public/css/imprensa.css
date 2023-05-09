@@ -95,8 +95,8 @@
     font-size: 23px;
 }
 
-.btn-pagina.active{
-    color: rgb(177, 126, 51);
+.btn-pagina:hover{
+    color: var(--dourado-B1);
 }
 
 .btn-imprensa-esq{
@@ -108,6 +108,10 @@
     width: 17px;
 }
 
+.btn-imprensa-esq:hover{
+    background-image: url("../imgs/desktop/setaesquerda2.svg") !important;
+}
+
 .btn-imprensa-dir{
     background-color: white !important;
     background-image: url("../imgs/desktop/setadireita1.svg");
@@ -115,4 +119,8 @@
     height: 30px;
     margin-left: 40px;
     width: 17px; 
+}
+
+.btn-imprensa-dir:hover{
+    background-image: url("../imgs/desktop/setadireita2.svg") !important;
 }
