@@ -36,8 +36,7 @@
                     <?php endforeach; ?>
                 </tbody>
             </table>
-            <form action="novo_carousel.php">
-                <input type="hidden" name="accao" value="novo">
+            <form action="">           
                 <button class="btn mb-3" name="id" value="<?= $c["id"]; ?>" style="width: 100px">Novo</button>
             </form>
 
