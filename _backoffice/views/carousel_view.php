@@ -1,7 +1,7 @@
 <main>
     <div class="container-fluid caixa">
         <div class="row justify-content-center">
-            <table class="col-12 table table-striped mb-4">
+            <table class="col-12 table table-striped mb-4 p-4">
                 <thead>
                     <tr>
                         <th>IMAGEM</th>
@@ -36,9 +36,10 @@
                     <?php endforeach; ?>
                 </tbody>
             </table>
-            <form action="">           
-                <button class="btn mb-3" name="id" value="<?= $c["id"]; ?>" style="width: 100px">Novo</button>
-            </form>
+
+            <a href="#">
+                <button class="btn mb-3">CRIAR NOVO BANNER</button>
+            </a>
 
             </table>
         </div>
