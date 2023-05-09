@@ -1,4 +1,4 @@
-<main>
+<main id="main">
 
     <!-- AREA DO TITULO -->
 
@@ -25,12 +25,12 @@
                     <?= $autor["texto"]; ?>
                 </p>
 
-                <a class="d-flex d-sm-none justify-content-center" href="...">
+                <a class="d-flex d-sm-none justify-content-center " href="...">
                     <button class="btn-vermais btn-vermais-autor"></button>
                 </a>
 
 
-                <a class="d-flex justify-content-center" href="index.html">
+                <a class="d-flex" href="...">
                     <button class="btn-voltar btn-voltar-autor"></button>
                 </a>
 

@@ -40,6 +40,11 @@
     --preto: rgb(0, 0, 0) !important;
 }
 
+/* SCROLL PARA MAIN */
+html{
+    scroll-behavior: smooth;
+}
+
 /* BOTÕES */
 
 .btn-voltar{

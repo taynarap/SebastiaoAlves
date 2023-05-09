@@ -143,13 +143,13 @@ $carousel = getTodosCarousel();
                     <div class="collapse navbar-collapse" id="navbarMobile">
                         <ul id="navbar-nav-mobile" class="navbar-nav bg-light">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link <?= ($rotas[0] == "") ? "active" : ""; ?>" aria-current="page" href="<?= $url_base; ?> ">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="autor.html">Autor</a>
+                            <li class=" nav-item">
+                                <a class="nav-link <?= ($rotas[0] == "autor") ? "active" : ""; ?>" href="<?= $url_base; ?>autor">Autor</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link <?= ($rotas[0] == "livros") ? "active" : ""; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Livros
                                 </a>
                                 <ul class="dropdown-menu my-4 shadow">
@@ -159,10 +159,10 @@ $carousel = getTodosCarousel();
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="imprensa.html">Imprensa</a>
+                                <a class="nav-link <?= ($rotas[0] == "imprensa") ? "active" : ""; ?>" href="<?= $url_base; ?>imprensa">Imprensa</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contactos.html">Contactos</a>
+                                <a class="nav-link <?= ($rotas[0] == "contactos") ? "active" : ""; ?>" href="<?= $url_base; ?>contactos">Contactos</a>
                             </li>
 
                         </ul>
