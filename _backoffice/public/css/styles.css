@@ -1,3 +1,102 @@
-body{
-    background-color: pink;
+/* ---------- FONTS - IBM PLEX SANS ---------- */
+
+@font-face {
+    font-family:'IBMPlexSans-Bold';
+    src: url('../fonts/IBMPlexSans-Bold.ttf');
+}
+
+@font-face {
+    font-family:'IBMPlexSans-Medium';
+    src: url('../fonts/IBMPlexSans-Medium.ttf');
+}
+
+@font-face {
+    font-family:'IBMPlexSans-Light';
+    src: url('../fonts/IBMPlexSans-Light.ttf');
+}
+
+/* ---------- FONTS - LATO ---------- */
+@font-face {
+    font-family:'LatoBlack';
+    src: url('../fonts/Lato-Black.ttf');
+}
+
+@font-face {
+    font-family:'LatoBold';
+    src: url('../fonts/Lato-Bold.ttf');
+}
+
+/* ---------- CORES ---------- */
+:root{
+    --cinza-1D: rgb(29, 29, 29) !important;
+    --cinza-70: rgb(112, 112, 112) !important;
+    --cinza-4D: rgb(77, 77, 77) !important;
+    --dourado-B4: rgb(180, 125, 51) !important;
+    --dourado-B1: rgb(177, 126, 59) !important;
+    --dourado-A9: rgb(169, 115, 57) !important;
+    --branco: rgb(255, 255, 255) !important;
+    --preto: rgb(0, 0, 0) !important;
+}
+
+
+.caixa{
+    background-color: var(--divs);
+    border: 3px solid var(--cinza-70);
+    border-radius: 25px;
+    font-family: 'IBMPlexSans-Medium';
+    max-width: 80%;
+}
+
+/* ---------- CSS TEXTO ---------- */
+.t1{
+    font-family: 'IBMPlexSans-Bold';
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--dourado-A9);
+}
+
+
+/* ---------- NAVBAR ----------  */
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler-icon {
+    width: 35px !important;
+    height: 25px !important;  
+    padding: 15px;
+    margin-right: 10px;
+}
+
+.nav-link{
+    color: var(--cinza-4D);
+    font-family: 'LatoBlack';
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    color: var(--dourado-B1);
+}
+
+.nav-link.active{
+    color: var(--dourado-B1) !important;
+}
+
+/* ---------- TABLE ---------- */
+
+
+/* ---------- BOTÕES ---------- */
+
+.btn{
+    background-color: var(--dourado-B1);
+    border: 1px solid var(--dourado-B1);
+    color: var(--branco);
+    font-weight: 900 !important;
+}
+
+.btn:hover{
+    background-color: var(--dourado-A9);
+    border-color: var(--dourado-A9);
 }
