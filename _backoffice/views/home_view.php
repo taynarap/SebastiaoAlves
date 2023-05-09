@@ -22,12 +22,12 @@
 
                             <td>
                                 <form action="carousel_saida.php">
-                                    <input type="hidden" name="accao" value="editar">
+                                  
                                     <button class="btn" name="id" value="<?= $c["id"]; ?>">Editar</button>
                                 </form>
                                 <br>
                                 <form action="">
-                                    <input type="hidden" name="accao" value="apagar">
+                                   
                                     <button class="btn" name="id" value="<?= $c["id"]; ?>">Apagar</button>
                                 </form>
                             </td>

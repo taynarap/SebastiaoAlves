@@ -1,7 +1,8 @@
 <?php
-// echo "<pre>";
-// print_r($_SERVER);
-// echo "</pre>";
+
+//LOGIN INFO
+//login -> taynara
+//senha -> 1111
 
 // Importacoes
 require_once("requisitos.php");
@@ -23,6 +24,10 @@ switch ((isset($rotas[1])) ? $rotas[1] : "") {
 
     case "carousel":
         require_once("_backoffice/models/carousel_model.php");
+        break;
+
+    case "home":
+        require_once("_backoffice/models/home_model.php");
         break;
 
     case "sair":
