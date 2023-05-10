@@ -30,6 +30,13 @@ function getTudoHome(){
 return selectSQLUnico("SELECT * FROM home");
 }
 
+//------------- HELPER IMPRENSA -------------
+
+function getTudoImprensa()
+{
+    return selectSQL("SELECT * FROM imprensa");
+}
+
 //------------- HELPER LIVROS -------------
 
 function getTodosLivros()
@@ -52,11 +59,4 @@ function getDestaque()
 return selectSQL("SELECT * FROM livros WHERE destaques=1");
 }
 
-
-//------------- HELPER IMPRENSA -------------
-
-function getTudoImprensa()
-{
-    return selectSQL("SELECT * FROM imprensa");
-}
 ?>
