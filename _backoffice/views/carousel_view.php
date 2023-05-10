@@ -21,7 +21,7 @@
                             <td><?= $c["ultima_atualizacao"]; ?></td>
 
                             <td>
-                                <a href="<?= $url_backoffice; ?>editar/<?= $c["id"] ?>">
+                                <a href="<?= $url_backoffice; ?>editarCarousel/<?= $c["id"] ?>">
                                     <button class="btn mb-2">Editar</button>
                                 </a>
                                 <br>

@@ -26,6 +26,10 @@ switch ((isset($rotas[1])) ? $rotas[1] : "") {
         require_once("_backoffice/models/carousel_model.php");
         break;
 
+    case "editarCarousel":
+        require_once("_backoffice/models/saidas/editar_carousel_model.php");
+        break;
+
     case "home":
         require_once("_backoffice/models/home_model.php");
         break;

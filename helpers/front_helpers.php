@@ -21,7 +21,12 @@ function getRedes(){
 //------------- HELPER HEADER -------------
 
 function getTodosCarousel(){
-return selectSQL("SELECT * FROM carousel");
+    return selectSQL("SELECT * FROM carousel");
+}
+
+function getCarouselID($id)
+{
+    return selectSQLUnico("SELECT * FROM carousel WHERE id='$id'");
 }
 
 //------------- HELPER HOME -------------
@@ -46,17 +51,16 @@ function getTodosLivros()
 
 function getLivroID($id)
 {
-return selectSQLUnico("SELECT * FROM livros WHERE id='$id'");
+    return selectSQLUnico("SELECT * FROM livros WHERE id='$id'");
 }
 
 function getLivrosSubmenu()
 {
-return selectSQL("SELECT id, titulo FROM livros ORDER BY titulo ASC");
+    return selectSQL("SELECT id, titulo FROM livros ORDER BY titulo ASC");
 }
 
 function getDestaque()
 {
-return selectSQL("SELECT * FROM livros WHERE destaques=1");
+    return selectSQL("SELECT * FROM livros WHERE destaques=1");
 }
-
 ?>
