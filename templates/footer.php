@@ -5,7 +5,7 @@ require_once("requisitos.php");
 
 //Globais
 $contactos = getContactos();
-$sociais = getSociais();
+$redes = getRedes();
 
 ?>
 
@@ -93,10 +93,16 @@ $sociais = getSociais();
                 Siga-me nas Redes Sociais
             </div>
 
-            <div class="redes-icons">
-                <a class="icon-item me-4" href=""> <img src="<?= $sociais["instagram"]; ?>" alt="Icon Instagram"></a>
-                <a class="icon-item me-4" href=""> <img src="<?= $sociais["facebook"]; ?>" alt="Icon Facebook"></a>
-                <a class="icon-item me-4" href=""> <img src="<?= $sociais["linkedin"]; ?>" alt="Icon LinkedIn"></a>
+            <div class="redes-icons mt-3">
+                <a class="icon-item me-4" href="<?= $redes["instagram"]; ?>">
+                    <img src=<?= $url_base . "/public/imgs/desktop/instagram1.svg"; ?> alt="Instagram" onmouseover="instaHover(this)" onmouseout="instaOut(this)">
+                </a>
+                <a class="icon-item me-4" href="<?= $redes["facebook"]; ?>">
+                    <img src=<?= $url_base . "/public/imgs/desktop/facebook1.svg"; ?> alt="Instagram" onmouseover="faceHover(this)" onmouseout="faceOut(this)">
+                </a>
+                <a class="icon-item me-4" href="<?= $redes["linkedin"]; ?>">
+                    <img src=<?= $url_base . "/public/imgs/desktop/linkedin1.svg"; ?> alt="Instagram" onmouseover="linkHover(this)" onmouseout="linkOut(this)">
+                </a>
             </div>
 
             <div class="redes-copyright p">
@@ -163,10 +169,16 @@ $sociais = getSociais();
                 Siga-me nas Redes Sociais
             </div>
 
-            <div class="redes-icons">
-                <a class="icon-item me-4" href="#"> <img src="<?= $sociais["instagram"]; ?>" alt="Icon Instagram"></a>
-                <a class="icon-item me-4" href="#"> <img src="<?= $sociais["facebook"]; ?>" alt="Icon Facebook"></a>
-                <a class="icon-item me-4" href="#"> <img src="<?= $sociais["linkedin"]; ?>" alt="Icon LinkedIn"></a>
+            <div class="redes-icons mt-3">
+                <a class="icon-item me-4" href="<?= $redes["instagram"]; ?>">
+                    <img src=<?= $url_base . "/public/imgs/desktop/instagram1.svg"; ?> alt="Instagram" onmouseover="instaHover(this)" onmouseout="instaOut(this)">
+                </a>
+                <a class="icon-item me-4" href="<?= $redes["facebook"]; ?>">
+                    <img src=<?= $url_base . "/public/imgs/desktop/facebook1.svg"; ?> alt="Instagram" onmouseover="faceHover(this)" onmouseout="faceOut(this)">
+                </a>
+                <a class="icon-item me-4" href="<?= $redes["linkedin"]; ?>">
+                    <img src=<?= $url_base . "/public/imgs/desktop/linkedin1.svg"; ?> alt="Instagram" onmouseover="linkHover(this)" onmouseout="linkOut(this)">
+                </a>
             </div>
 
         </div>

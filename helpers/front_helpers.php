@@ -13,8 +13,8 @@ function getContactos(){
     return selectSQLUnico("SELECT * FROM contactos");
 }
 
-function getSociais(){
-    return selectSQLUnico("SELECT * FROM sociais");
+function getRedes(){
+    return selectSQLUnico("SELECT * FROM redes");
 }
 
 

@@ -16,6 +16,12 @@
 
                 <hr>
 
+                <div class="t1 mb-3">Email</div>
+
+                <p><?= $contactos["email"]; ?></p>
+
+                <hr>
+
                 <div class="t1 mb-3">Horário</div>
 
                 <p><?= $contactos["horario"]; ?></p>
@@ -23,7 +29,7 @@
                 <hr>
 
                 <a href="#">
-                    <button class="btn">EDITAR HOME</button>
+                    <button class="btn">EDITAR CONTACTOS</button>
                 </a>
 
             </div>
