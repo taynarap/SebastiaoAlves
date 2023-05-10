@@ -9,10 +9,10 @@
 
                         <div class="t1">Tem certeza que desejas apagar o item (<?= $id; ?>)?</div>
 
-                        <button class="btn" name="apagar" value="<?= $id; ?>">SIM</button>
+                        <button class="btn mt-3" name="apagar" value="<?= $id; ?>">SIM</button>
 
                         <a href="<?= $url_backoffice; ?>carousel">
-                            <button class="btn" type="button">NÃO</button>
+                            <button class="btn mt-3" type="button">NÃO</button>
                         </a>
 
                     </form>

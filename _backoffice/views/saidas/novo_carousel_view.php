@@ -2,7 +2,7 @@
     <div class="container-fluid caixa">
         <div class="row justify-content-center">
             <div class="col-12 p-4">
-                <?php if (!isset($_POST["adicionar"])) : ?>
+                <?php if (!isset($_POST["titulo"])) : ?>
 
                     <div class="t1 mb-3">Criar Novo Carousel</div>
 
@@ -12,15 +12,16 @@
 
                     <form action="" method="POST">
 
-                        <input class="mb-3 mt-3 w-50" type="text" name="img_desktop" placeholder="Imagem para Desktop">
-                        <br>
-                        <input class="mb-3 w-50" type="text" name="img_mobile" placeholder="Imagem para Mobile">
+                        <input class="mb-3 mt-3 w-50" type="text" name="img_desktop" require placeholder="Imagem para Desktop">
                         <br>
 
-                        <input class="mb-3 w-50" type="text" name="titulo" placeholder="Título">
+                        <input class="mb-3 w-50" type="text" name="img_mobile" require placeholder="Imagem para Mobile">
                         <br>
 
-                        <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto" placeholder="Texto do Carousel"></textarea>
+                        <input class="mb-3 w-50" type="text" name="titulo" require placeholder="Título">
+                        <br>
+
+                        <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto" require placeholder="Texto do Carousel"></textarea>
                         <script>
                             ClassicEditor
                                 .create(document.querySelector('#texto'))
@@ -29,7 +30,9 @@
                                 });
                         </script>
                         <br>
-                        <input class="btn mt'3" type="submit" value="Adicionar">
+                        <input class="mb-3 w-50" type="text" name="saber_mais" require placeholder="Link Saber Mais">
+                        <br>
+                        <input class="btn mt-3" type="submit" value="Adicionar">
 
                     </form>
 
