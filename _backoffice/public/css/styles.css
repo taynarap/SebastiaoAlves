@@ -38,12 +38,23 @@
     --preto: rgb(0, 0, 0) !important;
 }
 
+/* ---------- BACKGROUND IMG ---------- */
+body{
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
 /* ---------- CSS CONTAINERS ---------- */
 
 .caixa{
-    background-color: var(--divs);
-    border: 3px solid var(--cinza-70);
+    background-color: var(--branco);
     border-radius: 25px;
+    box-shadow:  5px 5px 10px #969696,
+             -5px -5px 10px #afafaf;
     font-family: 'IBMPlexSans-Medium';
     margin-bottom: 50px;
     max-width: 80%;
@@ -113,3 +124,4 @@ th, td{
     border-color: var(--dourado-A9);
     color: var(--preto) !important;
 }
+

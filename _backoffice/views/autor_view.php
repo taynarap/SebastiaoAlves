@@ -1,5 +1,5 @@
 <main>
-    <div class="container-fluid caixa">
+    <div class="container-fluid caixa mb-4">
         <div class="row justify-content-center">
 
             <div class="col-12 p-4">

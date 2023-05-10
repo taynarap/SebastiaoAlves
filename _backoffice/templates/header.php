@@ -17,7 +17,9 @@
 
 <body class="text-center">
 
-    <header class="mb-4 <?= ($rotas[1] == "" || $rotas[1] == "sair") ? "d-none" : ""; ?>">
+    <!-- IMAGEM DO BODY ORIGINAL DE: <a href="https://br.freepik.com/fotos-gratis/boa-mesa-de-negocios-em-fundo-preto_10148355.htm#page=2&query=desk&position=3&from_view=search&track=sph">Imagem de denamorado</a> no Freepik-->
+
+    <header class="mt-3 mb-4 <?= ($rotas[1] == "" || $rotas[1] == "sair") ? "d-none" : ""; ?>">
         <div class="container-fluid caixa mt-3 mb-4">
             <div class="row">
                 <div class="col-12">

@@ -1,8 +1,8 @@
-    <footer class="fixed-bottom">
-        <h1 class="container-fluid mt-5 mb-0">
+    <footer class="">
+        <h1 class="container-fluid mb-0">
             <div class="row">
-                <div class="col-12 rodape">
-                  
+                <div class="col-12">
+                    
                 </div>
             </div>
         </h1>
