@@ -22,7 +22,7 @@
 
                             <td>
                                 <a href="<?= $url_backoffice; ?>editar/<?= $c["id"] ?>">
-                                    <button class="btn mt-3 mb-2">Editar</button>
+                                    <button class="btn mb-2">Editar</button>
                                 </a>
                                 <br>
                                 <a href="<?= $url_backoffice; ?>apagar/<?= $c["id"] ?>">

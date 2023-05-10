@@ -34,6 +34,10 @@
                 </tbody>
             </table>
 
+            <a href="#">
+                <button class="btn mb-3">ADICIONAR NOVA IMPRENSA</button>
+            </a>
+
         </div>
     </div>
 </main>
