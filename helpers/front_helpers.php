@@ -32,6 +32,11 @@ return selectSQLUnico("SELECT * FROM home");
 
 //------------- HELPER LIVROS -------------
 
+function getTodosLivros()
+{
+    return selectSQL("SELECT * FROM livros");
+}
+
 function getLivroID($id)
 {
 return selectSQLUnico("SELECT * FROM livros WHERE id='$id'");

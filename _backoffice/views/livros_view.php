@@ -1,7 +1,7 @@
 <main>
     <div class="container-fluid caixa">
-        <div class="row justify-content-center">
-            <table class="col-12 table table-striped mb-4 p-4 align-middle">
+        <div class="row justify-content-center table-responsive">
+            <table class="col-12 table table-striped mb-4 align-middle">
                 <thead>
                     <tr>
                         <th>IMAGEM</th>
@@ -12,20 +12,20 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($carousel as $c) : ?>
+                    <?php foreach ($livros as $l) : ?>
 
                         <tr>
-                            <td><img src="<?= $c["img_desktop"]; ?>" style="width: 200px"></td>
-                            <td><?= $c["titulo"]; ?></td>
-                            <td><?= substr($c["texto"], 0, 100); ?>...</td>
-                            <td><?= $c["ultima_atualizacao"]; ?></td>
+                            <td><img src="<?= $l["imagem"]; ?>" style="width: 100px"></td>
+                            <td><?= $l["titulo"]; ?></td>
+                            <td><?= substr($l["texto"], 0, 100); ?>...</td>
+                            <td><?= ($l["ultima_atualizacao"] == "") ? "--- Sem Edições Anteriores---" : $l["ultima_atualizacao"]; ?></td>
 
                             <td>
-                                <a href="<?= $url_backoffice; ?>editar/<?= $c["id"] ?>">
-                                    <button class="btn mt-3 mb-2">Editar</button>
+                                <a href="<?= $url_backoffice; ?>editar/<?= $l["id"] ?>">
+                                    <button class="btn mb-2">Editar</button>
                                 </a>
                                 <br>
-                                <a href="<?= $url_backoffice; ?>apagar/<?= $c["id"] ?>">
+                                <a href="<?= $url_backoffice; ?>apagar/<?= $l["id"] ?>">
                                     <button class="btn">Apagar</button>
                                 </a>
                             </td>
@@ -38,6 +38,7 @@
             <a href="#">
                 <button class="btn mb-3">CRIAR NOVO BANNER</button>
             </a>
+
         </div>
     </div>
 </main>

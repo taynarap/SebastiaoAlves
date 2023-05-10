@@ -92,6 +92,12 @@ input[type="text"], input[type="password"]{
     text-align: center;
 }
 
+/* ---------- TABLES ---------- */
+
+th, td{
+    max-width: 150px !important;
+}
+
 
 /* ---------- BOTÕES ---------- */
 

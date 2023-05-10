@@ -1,28 +1,27 @@
 <main>
     <div class="container-fluid caixa">
-        <div class="row justify-content-center">
-            <table class="col-12 table table-striped mb-4 p-4 align-middle">
+        <div class="row justify-content-center table-responsive">
+            <table class="col-12 table table-striped mb-4 align-middle">
                 <thead>
                     <tr>
                         <th>IMAGEM</th>
                         <th>TÍTULO</th>
                         <th>TEXTO</th>
-                        <th>DATA ACTUALIZAÇÃO</th>
+                        <th>DATA PUBLICAÇÃO</th>
                         <th>ACÇÕES</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($carousel as $c) : ?>
+                    <?php foreach ($imprensa as $i) : ?>
 
                         <tr>
-                            <td><img src="<?= $c["img_desktop"]; ?>" style="width: 200px"></td>
-                            <td><?= $c["titulo"]; ?></td>
-                            <td><?= substr($c["texto"], 0, 100); ?>...</td>
-                            <td><?= $c["ultima_atualizacao"]; ?></td>
-
+                            <td><img src="<?= $i["imagem"]; ?>" style="width: 200px"></td>
+                            <td><?= $i["titulo"]; ?></td>
+                            <td><?= ($i["texto"] == "") ? "--- SEM TEXTO ---" : (substr($i["texto"], 0, 100) . "..."); ?></td>
+                            <td><?= $i["data_publicacao"]; ?></td>
                             <td>
-                                <a href="<?= $url_backoffice; ?>editar/<?= $c["id"] ?>">
-                                    <button class="btn mt-3 mb-2">Editar</button>
+                                <a href="<?= $url_backoffice; ?>editar/<?= $i["id"] ?>">
+                                    <button class="btn mb-2">Editar</button>
                                 </a>
                                 <br>
                                 <a href="<?= $url_backoffice; ?>apagar/<?= $c["id"] ?>">
@@ -35,9 +34,6 @@
                 </tbody>
             </table>
 
-            <a href="#">
-                <button class="btn mb-3">CRIAR NOVO BANNER</button>
-            </a>
         </div>
     </div>
 </main>

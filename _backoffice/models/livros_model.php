@@ -6,11 +6,11 @@ require_once("requisitos.php");
 estaLogado();
 
 // ---------- VARIAVEL COM HELPER ----------
-$carousel = getTodosCarousel();
+$livros = getTodosLivros();
 
 // ---------- ELEMENTOS VISUAIS DA PAGINA ----------
 require_once("_backoffice/templates/header.php");
 
-require_once("_backoffice/views/carousel_view.php");
+require_once("_backoffice/views/livros_view.php");
 
 require_once("_backoffice/templates/footer.php");

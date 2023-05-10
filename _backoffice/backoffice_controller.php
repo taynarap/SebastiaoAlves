@@ -34,6 +34,30 @@ switch ((isset($rotas[1])) ? $rotas[1] : "") {
         require_once("_backoffice/models/autor_model.php");
         break;
 
+    case "livros":
+        require_once("_backoffice/models/livros_model.php");
+        break;
+
+    case "destaques":
+        require_once("_backoffice/models/destaques_model.php");
+        break;
+
+    case "imprensa":
+        require_once("_backoffice/models/imprensa_model.php");
+        break;
+
+    case "contactos":
+        require_once("_backoffice/models/contactos_model.php");
+        break;
+
+    case "redes":
+        require_once("_backoffice/models/redes_model.php");
+        break;
+
+    case "configuracoes":
+        require_once("_backoffice/models/configuracoes_model.php");
+        break;
+
     case "sair":
     require_once("models/sair_model.php");
     break;
@@ -42,5 +66,3 @@ switch ((isset($rotas[1])) ? $rotas[1] : "") {
 // require_once("models/404_model.php");
 // break;
 }
-
-?>

@@ -10,7 +10,7 @@
 
                 <hr>
 
-                <div class="t1 mb-3">Texto do "Últimos Livros" da página Autor</div>
+                <div class="t1 mb-3">Texto da página Autor</div>
 
                 <p><?= $autor["texto"]; ?></p>
 
