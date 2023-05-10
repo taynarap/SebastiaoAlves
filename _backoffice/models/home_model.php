@@ -6,8 +6,7 @@ estaLogado();
 
 $home = getTudoHome();
 
-// PAGINA BEM-VINDO + ULTIMO ACESSO
-
+// ---------- ELEMENTOS VISUAIS DA PAGINA ----------
 require_once("_backoffice/templates/header.php");
 
 require_once("_backoffice/views/home_view.php");

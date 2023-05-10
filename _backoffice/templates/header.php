@@ -13,6 +13,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href=<?= $url_base . "_backoffice/public/css/styles.css"; ?>>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/classic/ckeditor.js"></script>
 </head>
 
 <body class="text-center">
@@ -39,31 +41,31 @@
                                     <a class="nav-link <?= ($rotas[1] == "inicio") ? "active" : ""; ?>" aria-current="page" href="<?= $url_backoffice; ?>inicio">INÍCIO</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link  <?= ($rotas[1] == "carousel") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>carousel">CAROUSEL</a>
+                                    <a class="nav-link  <?= ($rotas[1] == "carousel" || $rotas[1] == "editarCarousel" || $rotas[1] == "apagarCarousel"|| $rotas[1] == "novoCarousel") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>carousel">CAROUSEL</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link <?= ($rotas[1] == "home") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>home">HOME</a>
+                                    <a class="nav-link <?= ($rotas[1] == "home" || $rotas[1] == "editarHome") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>home">HOME</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link <?= ($rotas[1] == "autor") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>autor">AUTOR</a>
+                                    <a class="nav-link <?= ($rotas[1] == "autor" || $rotas[1] == "editarAutor") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>autor">AUTOR</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link <?= ($rotas[1] == "livros") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>livros">LIVROS</a>
+                                    <a class="nav-link <?= ($rotas[1] == "livros" || $rotas[1] == "editarLivros" || $rotas[1] == "apagarLivros") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>livros">LIVROS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link <?= ($rotas[1] == "destaques") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>destaques">DESTAQUES</a>
+                                    <a class="nav-link <?= ($rotas[1] == "destaques" || $rotas[1] == "editarDestaques") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>destaques">DESTAQUES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link <?= ($rotas[1] == "imprensa") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>imprensa">IMPRENSA</a>
+                                    <a class="nav-link <?= ($rotas[1] == "imprensa" || $rotas[1] == "editarImprensa" || $rotas[1] == "apagarImprensa") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>imprensa">IMPRENSA</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link <?= ($rotas[1] == "contactos") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>contactos">CONTACTOS</a>
+                                    <a class="nav-link <?= ($rotas[1] == "contactos" || $rotas[1] == "editarContactos") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>contactos">CONTACTOS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link <?= ($rotas[1] == "redes") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>redes">REDES</a>
+                                    <a class="nav-link <?= ($rotas[1] == "redes" || $rotas[1] == "editarRedes") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>redes">REDES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link <?= ($rotas[1] == "configuracoes") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>configuracoes">CONFIGURAÇÕES</a>
+                                    <a class="nav-link <?= ($rotas[1] == "configuracoes" || $rotas[1] == "editarConfiguracoes") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>configuracoes">CONFIGURAÇÕES</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link <?= ($rotas[1] == "sair") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>sair">SAIR</a>

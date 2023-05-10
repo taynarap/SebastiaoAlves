@@ -30,8 +30,20 @@ switch ((isset($rotas[1])) ? $rotas[1] : "") {
         require_once("_backoffice/models/saidas/editar_carousel_model.php");
         break;
 
+    case "apagarCarousel":
+        require_once("_backoffice/models/saidas/apagar_carousel_model.php");
+        break;
+
+    case "novoCarousel":
+        require_once("_backoffice/models/saidas/novo_carousel_model.php");
+        break;
+
     case "home":
         require_once("_backoffice/models/home_model.php");
+        break;
+
+    case "editarHome":
+        require_once("_backoffice/models/saidas/editar_home_model.php");
         break;
 
     case "autor":
@@ -42,12 +54,28 @@ switch ((isset($rotas[1])) ? $rotas[1] : "") {
         require_once("_backoffice/models/livros_model.php");
         break;
 
+    case "editarLivro":
+        require_once("_backoffice/models/saidas/editar_livros_model.php");
+        break;
+
+    case "apagarLivro":
+        require_once("_backoffice/models/saidas/apagar_livro_model.php");
+        break;
+
     case "destaques":
         require_once("_backoffice/models/destaques_model.php");
         break;
 
     case "imprensa":
         require_once("_backoffice/models/imprensa_model.php");
+        break;
+
+    case "editarImprensa":
+        require_once("_backoffice/models/saidas/editar_imprensa_model.php");
+        break;
+
+    case "apagarImprensa":
+        require_once("_backoffice/models/saidas/apagar_imprensa_model.php");
         break;
 
     case "contactos":

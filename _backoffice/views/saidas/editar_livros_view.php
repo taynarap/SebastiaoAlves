@@ -3,8 +3,8 @@
         <div class="row justify-content-center">
             <div class="col-12 p-4">
                 <?php if (!isset($_POST["editar"])) : ?>
-                    <div class="t1">Editar Carousel Item (<?= $id; ?>)</div>
-                    
+                    <div class="t1">Editar Livro (<?= $id; ?>)</div>
+
                     <a target="_blank" href="<?= $url_base; ?>filemanager/tinyfilemanager.php">
                         <button>Buscar Link de Imagem</button>
                     </a>
@@ -12,13 +12,11 @@
                     <form action="" method="POST">
                         <br>
                         <input type="hidden" name="editar" value="<?= $id; ?>">
-                        <input class="mb-2 w-75" type="text" name="img_desktop" value="<?= $carousel_especifico["img_desktop"]; ?>">
+                        <input class="mb-2 w-75" type="text" name="imagem" value="<?= $livro_especifico["imagem"]; ?>">
                         <br>
-                        <input class="mb-2 w-75" type="text" name="img_mobile" value="<?= $carousel_especifico["img_mobile"]; ?>">
+                        <input class="mb-2 w-75" type="text" name="titulo" value="<?= $livro_especifico["titulo"]; ?>">
                         <br>
-                        <input class="mb-2 w-75" type="text" name="titulo" value="<?= $carousel_especifico["titulo"]; ?>">
-                        <br>
-                        <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto" value="<?= $carousel_especifico["texto"]; ?>"></textarea>
+                        <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto" value="<?= $livro_especifico["texto"]; ?>"></textarea>
                         <script>
                             ClassicEditor
                                 .create(document.querySelector('#texto'))
@@ -27,17 +25,15 @@
                                 });
                         </script>
                         <br>
-                        <input class=" mb-2 w-75" type="text" name="saber_mais" value="<?= $carousel_especifico["saber_mais"]; ?>">
-                        <br>
                         <input class="btn" type="submit" value="EDITAR">
 
                     </form>
 
                 <?php else : ?>
 
-                    <div class="t1">Carousel editado com sucesso!</div>
+                    <div class="t1">Livro editado com sucesso!</div>
 
-                    <a href="<?= $url_backoffice; ?>carousel">
+                    <a href="<?= $url_backoffice; ?>livros">
                         <button class="btn mt-3">VOLTAR</button>
                     </a>
 

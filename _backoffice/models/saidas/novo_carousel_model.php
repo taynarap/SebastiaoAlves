@@ -6,29 +6,19 @@ require_once("requisitos.php");
 // ---------- CONFIRMAR LOGIN ----------
 estaLogado();
 
-// ---------- INFORMACAO PARA EDICAO ----------
-$id = (empty($rotas[2])) ? NULL : $rotas[2];
-
-$carousel_especifico = getCarouselID($id);
-
 // ---------- ELEMENTOS VISUAIS DA PAGINA ----------
 require_once("_backoffice/templates/header.php");
 
-require_once("_backoffice/views/saidas/editar_carousel_view.php");
+require_once("_backoffice/views/saidas/novo_carousel_view.php");
 
 require_once("_backoffice/templates/footer.php");
 
 
-// ---------- EDITAR CAROUSEL ----------
+// ---------- CRIAR NOVO CAROUSEL ----------
 $form = isset($_POST["img_desktop"]) && isset($_POST["img_mobile"]) && isset($_POST["titulo"]) && isset($_POST["texto"]) && isset($_POST["saber_mais"]);
 
-if (isset($_POST['id'])) {
+if($form){
 
-    $idCarousel = $_POST['id'];
-
-} elseif ($form) {
-
-    $idCarousel = $_POST['editar'];
     $img_desktop = $_POST["img_desktop"];
     $img_mobile = $_POST["img_mobile"];
     $titulo = $_POST["titulo"];
@@ -38,6 +28,5 @@ if (isset($_POST['id'])) {
     date_default_timezone_set("Europe/Lisbon");
     $data_atual = date("H:i - d/m/Y");
 
-    iduSQL("UPDATE carousel SET img_desktop='$img_desktop', img_mobile='$img_mobile', titulo='$titulo', texto='$texto', saber_mais='$saber_mais', ultima_atualizacao='$data_atual' WHERE id='$idCarousel'");
-
+    iduSQL("INSERT INTO carousel (img_desktop, img_mobile, titulo, texto, saber_mais, ultima_atualizacao) VALUES ('$img_desktop', '$img_mobile', '$titulo', '$texto', '$saber_mais', '$data_atual')");
 }

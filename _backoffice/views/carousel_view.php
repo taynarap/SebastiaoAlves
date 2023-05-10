@@ -25,7 +25,7 @@
                                     <button class="btn mb-2">Editar</button>
                                 </a>
                                 <br>
-                                <a href="<?= $url_backoffice; ?>apagar/<?= $c["id"] ?>">
+                                <a href="<?= $url_backoffice; ?>apagarCarousel/<?= $c["id"] ?>">
                                     <button class="btn">Apagar</button>
                                 </a>
                             </td>
@@ -35,7 +35,7 @@
                 </tbody>
             </table>
 
-            <a href="#">
+            <a href="<?= $url_backoffice; ?>novoCarousel">
                 <button class="btn mb-3">CRIAR NOVO BANNER</button>
             </a>
         </div>

@@ -21,11 +21,11 @@
                             <td><?= ($l["ultima_atualizacao"] == "") ? "--- Sem Edições Anteriores---" : $l["ultima_atualizacao"]; ?></td>
 
                             <td>
-                                <a href="<?= $url_backoffice; ?>editar/<?= $l["id"] ?>">
+                                <a href="<?= $url_backoffice; ?>editarLivro/<?= $l["id"] ?>">
                                     <button class="btn mb-2">Editar</button>
                                 </a>
                                 <br>
-                                <a href="<?= $url_backoffice; ?>apagar/<?= $l["id"] ?>">
+                                <a href="<?= $url_backoffice; ?>apagarLivro/<?= $l["id"] ?>">
                                     <button class="btn">Apagar</button>
                                 </a>
                             </td>
@@ -36,7 +36,7 @@
             </table>
 
             <a href="#">
-                <button class="btn mb-3">CRIAR NOVO BANNER</button>
+                <button class="btn mb-3">ADICIONAR NOVO LIVRO</button>
             </a>
 
         </div>

@@ -16,7 +16,7 @@
 
                 <hr>
 
-                <a href="#">
+                <a href="<?= $url_backoffice; ?>editarHome">
                     <button class="btn">EDITAR HOME</button>
                 </a>
 

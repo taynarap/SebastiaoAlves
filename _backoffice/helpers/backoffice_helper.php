@@ -1,31 +1,5 @@
 <?php
 
-//---------- ATUALIZACOES ----------
-
-function novaAtualizacao($id){
-
-    $carousel = getTodosCarousel();
-
-    if (!empty($form)) {
-
-        $_SESSION["ultimo_acesso"] = $carousel["ultimo_acesso"];
-
-        date_default_timezone_set("Europe/Lisbon");
-        $data_atual = date("H:i:s - d/m/Y");
-
-        //QUANDO SE PUSER O UPDATE DA INFORMACAO TEM QUE SE POR O SET DE ULTIMA_ATUALIZACAO
-
-        iduSQL("UPDATE carousel SET ultimo_atualizacao='$data_atual' WHERE id=$id");
-
-        return true;
-
-    } else {
-        return false;
-    }
-
-}
-
-
 //---------- LOGIN ----------
 
 function fazerLogin($login, $senha)
