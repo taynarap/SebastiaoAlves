@@ -20,11 +20,11 @@
                             <td><?= ($i["texto"] == "") ? "--- SEM TEXTO ---" : (substr($i["texto"], 0, 100) . "..."); ?></td>
                             <td><?= $i["data_publicacao"]; ?></td>
                             <td>
-                                <a href="<?= $url_backoffice; ?>editar/<?= $i["id"] ?>">
+                                <a href="<?= $url_backoffice; ?>editarImprensa/<?= $i["id"] ?>">
                                     <button class="btn mb-2">Editar</button>
                                 </a>
                                 <br>
-                                <a href="<?= $url_backoffice; ?>apagar/<?= $c["id"] ?>">
+                                <a href="<?= $url_backoffice; ?>apagarImprensa/<?= $i["id"] ?>">
                                     <button class="btn">Apagar</button>
                                 </a>
                             </td>

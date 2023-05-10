@@ -42,6 +42,11 @@ function getTudoImprensa()
     return selectSQL("SELECT * FROM imprensa");
 }
 
+function getImprensaID($id)
+{
+    return selectSQLUnico("SELECT * FROM imprensa WHERE id='$id'");
+}
+
 //------------- HELPER LIVROS -------------
 
 function getTodosLivros()
