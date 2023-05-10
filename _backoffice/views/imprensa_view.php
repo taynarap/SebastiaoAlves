@@ -34,7 +34,7 @@
                 </tbody>
             </table>
 
-            <a href="#">
+            <a href="<?= $url_backoffice; ?>novaImprensa">
                 <button class="btn mb-3">ADICIONAR NOVA IMPRENSA</button>
             </a>
 

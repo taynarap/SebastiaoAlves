@@ -6,7 +6,6 @@
     $autor = getAutor();
     $home = getTudoHome();
     $livro_destaque = getDestaque();
-    
 
     //NAVBAR/CAROUSEL
     require_once("templates/header.php");

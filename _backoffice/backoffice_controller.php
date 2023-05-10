@@ -62,6 +62,10 @@ switch ((isset($rotas[1])) ? $rotas[1] : "") {
         require_once("_backoffice/models/saidas/apagar_livro_model.php");
         break;
 
+    case "novoLivro":
+        require_once("_backoffice/models/saidas/novo_livro_model.php");
+        break;
+
     case "destaques":
         require_once("_backoffice/models/destaques_model.php");
         break;
@@ -76,6 +80,10 @@ switch ((isset($rotas[1])) ? $rotas[1] : "") {
 
     case "apagarImprensa":
         require_once("_backoffice/models/saidas/apagar_imprensa_model.php");
+        break;
+
+    case "novaImprensa":
+        require_once("_backoffice/models/saidas/nova_imprensa_model.php");
         break;
 
     case "contactos":

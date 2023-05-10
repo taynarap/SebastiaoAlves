@@ -35,7 +35,7 @@
                 </tbody>
             </table>
 
-            <a href="#">
+            <a href="<?= $url_backoffice; ?>novoLivro">
                 <button class="btn mb-3">ADICIONAR NOVO LIVRO</button>
             </a>
 
