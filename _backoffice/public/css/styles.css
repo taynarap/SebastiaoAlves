@@ -38,12 +38,14 @@
     --preto: rgb(0, 0, 0) !important;
 }
 
+/* ---------- CSS CONTAINERS ---------- */
 
 .caixa{
     background-color: var(--divs);
     border: 3px solid var(--cinza-70);
     border-radius: 25px;
     font-family: 'IBMPlexSans-Medium';
+    margin-bottom: 50px;
     max-width: 80%;
 }
 
@@ -84,7 +86,11 @@
     color: var(--dourado-B1) !important;
 }
 
-/* ---------- TABLE ---------- */
+/* ---------- FORMS ---------- */
+
+input[type="text"], input[type="password"]{
+    text-align: center;
+}
 
 
 /* ---------- BOTÕES ---------- */
@@ -99,4 +105,5 @@
 .btn:hover{
     background-color: var(--dourado-A9);
     border-color: var(--dourado-A9);
+    color: var(--preto) !important;
 }

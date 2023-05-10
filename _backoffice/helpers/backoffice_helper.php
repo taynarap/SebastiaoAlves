@@ -1,15 +1,5 @@
 <?php
 
-//---------- ACESSOS ----------
-function novoAcesso($id_usuario)
-{
-
-    date_default_timezone_set("Europe/Lisbon");
-    $data_atual = date("H:i:s - d/m/Y");
-
-    iduSQL("UPDATE usuarios SET ultimo_acesso='$data_atual' WHERE id=$id_usuario");
-}
-
 //---------- ATUALIZACOES ----------
 
 function novaAtualizacao($id){
@@ -23,6 +13,8 @@ function novaAtualizacao($id){
         date_default_timezone_set("Europe/Lisbon");
         $data_atual = date("H:i:s - d/m/Y");
 
+        //QUANDO SE PUSER O UPDATE DA INFORMACAO TEM QUE SE POR O SET DE ULTIMA_ATUALIZACAO
+
         iduSQL("UPDATE carousel SET ultimo_atualizacao='$data_atual' WHERE id=$id");
 
         return true;
@@ -31,11 +23,11 @@ function novaAtualizacao($id){
         return false;
     }
 
-
 }
 
 
 //---------- LOGIN ----------
+
 function fazerLogin($login, $senha)
 {
 
@@ -45,9 +37,13 @@ function fazerLogin($login, $senha)
         if (password_verify($senha, $usuario["senha"])) {
             session_start();
             $_SESSION["usuario"] = $usuario;
+            $id_usuario = $usuario["id"];
             $_SESSION["ultimo_acesso"] = $usuario["ultimo_acesso"];
 
-            novoAcesso($usuario["id"]);
+            date_default_timezone_set("Europe/Lisbon");
+            $data_atual = date("H:i:s - d/m/Y");
+
+            iduSQL("UPDATE usuarios SET ultimo_acesso='$data_atual' WHERE id=$id_usuario");
 
             return true;
         } else {

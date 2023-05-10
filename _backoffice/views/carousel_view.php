@@ -21,15 +21,13 @@
                             <td>10/02/2023</td>
 
                             <td>
-                                <form action="carousel_saida.php">
-                                    <input type="hidden" name="accao" value="editar">
-                                    <button class="btn" name="id" value="<?= $c["id"]; ?>">Editar</button>
-                                </form>
+                                <a href="<?= $url_backoffice; ?>editar/<?= $c["id"] ?>">
+                                    <button class="btn mt-3 mb-2">Editar</button>
+                                </a>
                                 <br>
-                                <form action="">
-                                    <input type="hidden" name="accao" value="apagar">
-                                    <button class="btn" name="id" value="<?= $c["id"]; ?>">Apagar</button>
-                                </form>
+                                <a href="<?= $url_backoffice; ?>apagar/<?= $c["id"] ?>">
+                                    <button class="btn">Apagar</button>
+                                </a>
                             </td>
                         </tr>
 

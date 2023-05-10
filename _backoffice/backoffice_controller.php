@@ -30,6 +30,10 @@ switch ((isset($rotas[1])) ? $rotas[1] : "") {
         require_once("_backoffice/models/home_model.php");
         break;
 
+    case "autor":
+        require_once("_backoffice/models/autor_model.php");
+        break;
+
     case "sair":
     require_once("models/sair_model.php");
     break;

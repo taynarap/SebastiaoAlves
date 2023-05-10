@@ -5,9 +5,9 @@
         <div class="row d-flex justify-content-center">
 
             <div class="col-12 mt-4 p-4">
-                <p class="login-titulo">Bem-vindo <?= ucfirst($_SESSION["usuario"]["login"]); ?>!</p>
+                <strong>Bem-vindo(a) <?= ucfirst($_SESSION["usuario"]["login"]); ?>!</strong>
 
-                <p>Data do último acesso: <?= $_SESSION["ultimo_acesso"]; ?></p>
+                <p class="mt-2">Data do último acesso: <?= $_SESSION["ultimo_acesso"]; ?></p>
             </div>
         </div>
 
