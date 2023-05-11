@@ -21,6 +21,9 @@
                         <input class="mb-3 w-50" type="text" name="titulo" require placeholder="Título">
                         <br>
 
+                        <input class="mb-3 w-50" type="text" name="observacao" require placeholder="Observação">
+                        <br>
+
                         <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto" require placeholder="Texto do Carousel"></textarea>
                         <script>
                             ClassicEditor

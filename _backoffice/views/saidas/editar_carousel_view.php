@@ -18,6 +18,8 @@
                         <br>
                         <input class="mb-2 w-75" type="text" name="titulo" value="<?= $carousel_especifico["titulo"]; ?>">
                         <br>
+                        <input class="mb-2 w-75" type="text" name="observacao" value="<?= $carousel_especifico["observacao"]; ?>">
+                        <br>
                         <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto"><?= $carousel_especifico["texto"]; ?></textarea>
                         <script>
                             ClassicEditor

@@ -19,7 +19,7 @@ require_once("_backoffice/views/saidas/editar_livros_view.php");
 require_once("_backoffice/templates/footer.php");
 
 
-// ---------- EDITAR CAROUSEL ----------
+// ---------- EDITAR LIVRO ----------
 $form = isset($_POST["imagem"]) && isset($_POST["titulo"]) && isset($_POST["texto"]);
 
 if (isset($_POST['id'])) {

@@ -20,7 +20,7 @@ require_once("_backoffice/templates/footer.php");
 
 
 // ---------- EDITAR CAROUSEL ----------
-$form = isset($_POST["img_desktop"]) && isset($_POST["img_mobile"]) && isset($_POST["titulo"]) && isset($_POST["texto"]) && isset($_POST["saber_mais"]);
+$form = isset($_POST["img_desktop"]) && isset($_POST["img_mobile"]) && isset($_POST["titulo"]) && isset($_POST["observacao"]) && isset($_POST["texto"]) && isset($_POST["saber_mais"]);
 
 if (isset($_POST['id'])) {
 
@@ -29,15 +29,10 @@ if (isset($_POST['id'])) {
 } elseif ($form) {
 
     $idCarousel = $_POST['editar'];
-    $img_desktop = $_POST["img_desktop"];
-    $img_mobile = $_POST["img_mobile"];
-    $titulo = $_POST["titulo"];
-    $texto = $_POST["texto"];
-    $saber_mais = $_POST["saber_mais"];
 
     date_default_timezone_set("Europe/Lisbon");
     $data_atual = date("H:i - d/m/Y");
 
-    iduSQL("UPDATE carousel SET img_desktop='$img_desktop', img_mobile='$img_mobile', titulo='$titulo', texto='$texto', saber_mais='$saber_mais', ultima_atualizacao='$data_atual' WHERE id='$idCarousel'");
+    iduSQL("UPDATE carousel SET img_desktop='$_POST[img_desktop]', img_mobile='$_POST[img_mobile]', titulo='$_POST[titulo]', observacao='$_POST[observacao]', texto='$_POST[texto]', saber_mais='$_POST[saber_mais]', ultima_atualizacao='$data_atual' WHERE id='$idCarousel'");
 
 }

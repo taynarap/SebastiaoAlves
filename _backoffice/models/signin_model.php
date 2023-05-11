@@ -1,9 +1,9 @@
 <?php
 
-//Importacoes
+// ---------- CONFIG / HELPERS ----------
 require_once("requisitos.php");
 
-//VERIFICAÇÃO DE SENHA E LOGIN INSERIDOS
+// ---------- CONFIRMAR LOGIN ----------
 $form = isset($_POST["login"]) && isset($_POST["senha"]);
 
 if ($form) {
@@ -15,7 +15,7 @@ if ($form) {
     }
 }
 
-//PAGINA INICIAL DO LOGIN
+// ---------- ELEMENTOS VISUAIS DA PAGINA ----------
 
 require_once("_backoffice/templates/header.php");
 
