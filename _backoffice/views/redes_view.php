@@ -22,7 +22,7 @@
 
                 <hr>
 
-                <a href="#">
+                <a href="<?= $url_backoffice; ?>editarRedes">
                     <button class="btn">EDITAR REDES SOCIAIS</button>
                 </a>
 

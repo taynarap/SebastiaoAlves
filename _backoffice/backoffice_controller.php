@@ -125,6 +125,10 @@ switch ((isset($rotas[1])) ? $rotas[1] : "") {
         require_once("_backoffice/models/redes_model.php");
         break;
 
+    case "editarRedes":
+        require_once("_backoffice/models/saidas/editar_redes_model.php");
+        break;
+
 //-------------------- ROTA SAIR -------------------- 
     case "sair":
     require_once("models/sair_model.php");
