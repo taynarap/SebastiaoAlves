@@ -53,8 +53,7 @@ $redes = getRedes();
                         Morada
                     </div>
                     <div class="contactos-texto">
-                        Lorem ipsum dolor sit amet, 12 <br>
-                        1234-543 Lorem
+                        <?= $contactos["morada"]; ?>
                     </div>
                 </div>
 
@@ -64,7 +63,7 @@ $redes = getRedes();
                     </div>
 
                     <div class="contactos-texto">
-                        +351 123 456 789
+                        <?= $contactos["telefone"]; ?>
                     </div>
                 </div>
 
@@ -73,7 +72,7 @@ $redes = getRedes();
                         Email
                     </div>
                     <div class="contactos-texto">
-                        lorem@lorem.pt
+                        <?= $contactos["email"]; ?>
                     </div>
                 </div>
 
@@ -136,8 +135,7 @@ $redes = getRedes();
                         Morada
                     </div>
                     <div class="contactos-texto">
-                        Lorem ipsum dolor sit amet, 12 <br>
-                        1234-543 Lorem
+                        <?= $contactos["morada"]; ?>
                     </div>
                 </div>
 
@@ -147,7 +145,7 @@ $redes = getRedes();
                     </div>
 
                     <div class="contactos-texto">
-                        +351 123 456 789
+                        <?= $contactos["telefone"]; ?>
                     </div>
                 </div>
 
@@ -156,7 +154,7 @@ $redes = getRedes();
                         Email
                     </div>
                     <div class="contactos-texto">
-                        lorem@lorem.pt
+                        <?= $contactos["email"]; ?>
                     </div>
                 </div>
             </div>

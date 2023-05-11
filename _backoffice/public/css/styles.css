@@ -68,6 +68,14 @@ body{
     color: var(--dourado-A9);
 }
 
+.titulo{
+    color: var(--cinza-4D);
+    font-family: 'IBMPlexSans-Bold';
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
 
 /* ---------- NAVBAR ----------  */
 

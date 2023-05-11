@@ -28,7 +28,7 @@
 
                 <hr>
 
-                <a href="#">
+                <a href="<?= $url_backoffice; ?>editarContactos">
                     <button class="btn">EDITAR CONTACTOS</button>
                 </a>
 
