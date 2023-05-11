@@ -4,7 +4,7 @@
             <div class="col-12 p-4">
                 <?php if (!isset($_POST["editar"])) : ?>
                     <div class="t1">Editar Carousel Item (<?= $id; ?>)</div>
-                    
+
                     <a target="_blank" href="<?= $url_base; ?>filemanager/tinyfilemanager.php">
                         <button>Buscar Link de Imagem</button>
                     </a>
@@ -18,7 +18,7 @@
                         <br>
                         <input class="mb-2 w-75" type="text" name="titulo" value="<?= $carousel_especifico["titulo"]; ?>">
                         <br>
-                        <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto" value="<?= $carousel_especifico["texto"]; ?>"></textarea>
+                        <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto"><?= $carousel_especifico["texto"]; ?></textarea>
                         <script>
                             ClassicEditor
                                 .create(document.querySelector('#texto'))

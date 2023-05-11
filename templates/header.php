@@ -28,7 +28,8 @@ $carousel = getTodosCarousel();
 
     <!--JQUERY-->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script src="public/js/funcoes.js"></script>
+    <script src="../public/js/main.js"></script>
+    <script src="../public/js/funcoes.js"></script>
 </head>
 
 <body class="px-0">

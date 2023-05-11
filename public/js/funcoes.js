@@ -38,7 +38,7 @@ function SubmenuLivros(){
 
 // ---------- SCROLL MAIN ----------
 function fazerScroll(){
-    if(pagina != "home"){
+    if($rotas[0] != ""){
         document.getElementById("#main").scrollIntoView();
     }  
 }

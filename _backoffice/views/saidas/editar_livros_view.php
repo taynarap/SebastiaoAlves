@@ -16,7 +16,7 @@
                         <br>
                         <input class="mb-2 w-75" type="text" name="titulo" value="<?= $livro_especifico["titulo"]; ?>">
                         <br>
-                        <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto" value="<?= $livro_especifico["texto"]; ?>"></textarea>
+                        <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto"><?= $livro_especifico["texto"]; ?></textarea>
                         <script>
                             ClassicEditor
                                 .create(document.querySelector('#texto'))

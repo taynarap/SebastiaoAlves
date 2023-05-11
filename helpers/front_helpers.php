@@ -24,15 +24,14 @@ function getTodosCarousel(){
     return selectSQL("SELECT * FROM carousel");
 }
 
-function getCarouselID($id)
-{
+function getCarouselID($id){
     return selectSQLUnico("SELECT * FROM carousel WHERE id='$id'");
 }
 
 //------------- HELPER HOME -------------
 
 function getTudoHome(){
-return selectSQLUnico("SELECT * FROM home");
+    return selectSQLUnico("SELECT * FROM home");
 }
 
 //------------- HELPER IMPRENSA -------------

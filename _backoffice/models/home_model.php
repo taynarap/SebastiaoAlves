@@ -1,9 +1,12 @@
 <?php
 
+// ---------- CONFIG / HELPERS ----------
 require_once("requisitos.php");
 
+// ---------- CONFIRMAR LOGIN ----------
 estaLogado();
 
+// ---------- INFORMACAO PARA EDICAO ----------
 $home = getTudoHome();
 
 // ---------- ELEMENTOS VISUAIS DA PAGINA ----------

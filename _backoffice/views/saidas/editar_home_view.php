@@ -13,7 +13,7 @@
                         <input type="hidden" name="editar" value="<?= $id; ?>">
                         <input class="mb-2 w-75" type="text" name="img_autor" value="<?= $home["img_autor"]; ?>">
                         <br>
-                        <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto" value="<?= $home["texto_ultimos_livros"]; ?>"></textarea>
+                        <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto_ultimos_livros"><?= $home["texto_ultimos_livros"]; ?></textarea>
                         <script>
                             ClassicEditor
                                 .create(document.querySelector('#texto'))

@@ -6,7 +6,7 @@
 
                 <div class="t1 mb-3">Imagem do autor da página Autor</div>
 
-                <img src="<?= $autor["imagem"]; ?>" alt="">
+                <img src="<?= $autor["imagem"]; ?>" alt="Imagem Autor">
 
                 <hr>
 
@@ -16,7 +16,7 @@
 
                 <hr>
 
-                <a href="#">
+                <a href="<?= $url_backoffice; ?>editarAutor">
                     <button class="btn">EDITAR AUTOR</button>
                 </a>
 

@@ -17,7 +17,7 @@
                         <br>
                         <input class="mb-2 w-75" type="text" name="titulo" value="<?= $imprensa_especifico["titulo"]; ?>">
                         <br>
-                        <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto" value="<?= $imprensa_especifico["texto"]; ?>"></textarea>
+                        <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto"><?= $imprensa_especifico["texto"]; ?></textarea>
                         <script>
                             ClassicEditor
                                 .create(document.querySelector('#texto'))
