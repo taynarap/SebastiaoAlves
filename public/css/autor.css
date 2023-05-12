@@ -38,6 +38,10 @@
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 30;
     }
+
+    .btn-voltar-autor{
+        justify-content: center;
+    }
 }
 
 @media all and (max-width: 768px){
@@ -70,7 +74,7 @@
 }
 
 .btn-voltar-autor{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 

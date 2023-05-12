@@ -3,21 +3,21 @@
         <div class="row justify-content-center">
             <div class="col-12 p-4">
                 <?php if (!isset($_POST["editar"])) : ?>
-                    <div class="t1 mb-3">Editar Imprensa (<?= $id; ?>)</div>
+                    <div class="t1 mb-3">Editar Imprensa (<?= $imprensa_especifica["titulo"]; ?>)</div>
 
-                    <a target="_blank" href="<?= $url_base; ?>filemanager/tinyfilemanager.php">
-                        <button>Buscar Link de Imagem</button>
+                    <a target="popup" href="<?= $url_base; ?>filemanager/tinyfilemanager.php" onclick="window.open('<?= $url_base; ?>filemanager/tinyfilemanager.php', 'popup', 'width=750,height=550'); return false;">
+                        <button class="btn">Buscar Link de Imagem</button>
                     </a>
 
                     <form action="" method="POST">
                         <input type="hidden" name="editar" value="<?= $id; ?>">
-                        <input class="mb-2 mt-3 w-75" type="text" name="imagem" value="<?= $imprensa_especifico["imagem"]; ?>">
+                        <input class="mb-2 mt-3 w-75" type="text" name="imagem" value="<?= $imprensa_especifica["imagem"]; ?>">
                         <br>
-                        <input class="mb-2 w-75" type="text" name="data_publicacao" value="<?= $imprensa_especifico["data_publicacao"]; ?>">
+                        <input class="mb-2 w-75" type="text" name="data_publicacao" value="<?= $imprensa_especifica["data_publicacao"]; ?>">
                         <br>
-                        <input class="mb-2 w-75" type="text" name="titulo" value="<?= $imprensa_especifico["titulo"]; ?>">
+                        <input class="mb-2 w-75" type="text" name="titulo" value="<?= $imprensa_especifica["titulo"]; ?>">
                         <br>
-                        <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto"><?= $imprensa_especifico["texto"]; ?></textarea>
+                        <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto"><?= $imprensa_especifica["texto"]; ?></textarea>
                         <script>
                             ClassicEditor
                                 .create(document.querySelector('#texto'))

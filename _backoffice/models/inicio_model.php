@@ -1,11 +1,12 @@
 <?php
 
+// ---------- CONFIG / HELPERS ----------
 require_once("requisitos.php");
 
+// ---------- CONFIRMAR LOGIN ----------
 estaLogado();
 
-// PAGINA BEM-VINDO + ULTIMO ACESSO
-
+// ---------- ELEMENTOS VISUAIS DA PAGINA ----------
 require_once("_backoffice/templates/header.php");
 
 require_once("_backoffice/views/inicio_view.php");

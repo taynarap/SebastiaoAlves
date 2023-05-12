@@ -1,4 +1,4 @@
-<main id="main">
+<main id="corpo">
 
     <!-- AREA DO TITULO -->
 
@@ -30,8 +30,8 @@
                 </a>
 
 
-                <a class="d-flex" href="...">
-                    <button class="btn-voltar btn-voltar-autor"></button>
+                <a class="d-flex btn-voltar-autor">
+                    <button class="btn-voltar" onclick="history.back()"></button>
                 </a>
 
             </div>

@@ -41,8 +41,7 @@
         <div class="container">
             <div id="destaques-area" class="row d-flex justify-content-center mx-auto gap-5 gap-md-5">
 
-                <?php for($i = 0; $i <= 2; $i++) : ?>
-                    <?php $l = $livro_destaque[$i]; ?>
+                <?php foreach($livro_destaque as $l): ?>
                     <div class="card">
                         <img class="destaques-img" src="<?= $l["imagem"]; ?>" alt="Destaque">
                         <div class="card-body">
@@ -58,7 +57,7 @@
                             </div>
                         </div>
                     </div>
-                <?php endfor; ?>
+                <?php endforeach; ?>
 
             </div>
         </div>

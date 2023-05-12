@@ -17,7 +17,7 @@ require_once("_backoffice/views/saidas/editar_redes_view.php");
 require_once("_backoffice/templates/footer.php");
 
 
-// ---------- EDITAR CONTACTOS ----------
+// ---------- EDITAR REDES SOCIAIS ----------
 $form = isset($_POST["instagram"]) && isset($_POST["facebook"]) && isset($_POST["linkedin"]);
 
 if ($form) {

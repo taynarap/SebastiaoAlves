@@ -7,7 +7,7 @@
                 <?php if (!isset($_POST["editar"])) : ?>
                     <div class="t1 mb-3">Alterar Senha</div>
 
-                    <form action="" method="POST">
+                    <form action="configuracoes" method="POST">
 
                         <input type="hidden" name="editar" value="<?= $usuario["id"] ?>">
                         <input class="mb-3" type="password" name="senha" placeholder="Senha Actual" required="required">

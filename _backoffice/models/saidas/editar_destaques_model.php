@@ -37,14 +37,6 @@ if (isset($_POST['id'])) {
     date_default_timezone_set("Europe/Lisbon");
     $data_atual = date("H:i - d/m/Y");
 
-    // FUNCIONA PARA MUDAR O CAMPO DESTAQUES PARA 1 DO LIVRO QUE QUEREMOS SELECIONAR
-    // iduSQL("UPDATE livros SET destaques='$destaques' WHERE id='$id_novo'");
-
-    iduSQL("UPDATE livros SET destaques = CASE destaques 
-                                            WHEN 1 THEN 0
-                                            WHEN 0 THEN 1
-                                            END,
-                                            ultima_atualizacao='$data_atual',
-                                            observacao='$_POST[observacao]'
-                                            WHERE id IN('$id_atual', '$id_novo')");
+    iduSQL("UPDATE livros SET destaques = CASE destaques WHEN 1 THEN 0 WHEN 0 THEN 1 END,
+    ultima_atualizacao='$data_atual', observacao='$_POST[observacao]' WHERE id IN('$id_atual', '$id_novo')");
 }

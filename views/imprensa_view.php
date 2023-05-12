@@ -1,4 +1,4 @@
-<main>
+<main id="corpo">
 
     <!-- AREA DO TITULO -->
 
@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-
+    
     <!-- ULTIMAS NOTICIAS -->
     <?php foreach ($imprensa as $i) : ?>
         <div id="noticia-area" class="container">
@@ -28,11 +28,11 @@
                     </div>
 
                     <div class="row d-flex justify-content-end data-publicacao">
-                        <?= $i["data_publicacao"]; ?>
+                        Publicado a <?= $i["data_publicacao"]; ?>
                     </div>
 
-                    <div id="livro-img">
-                        <img class="w-100" src="<?= $i["imagem"]; ?>" alt="Livro Senhora do Amor e da Guerra">
+                    <div id="livro-img" class="row">
+                        <img src="<?= $i["imagem"]; ?>" alt="Livro Senhora do Amor e da Guerra">
                     </div>
 
                     <div class="row m-0 p-0 d-flex flex-row justify-content-end">

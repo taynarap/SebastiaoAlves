@@ -1,4 +1,4 @@
-<main>
+<main id="corpo">
 
     <!-- AREA DO TITULO -->
 
@@ -28,12 +28,11 @@
 
                 </div>
 
-                <a class="d-lg-block d-none" href="index.html">
-                    <button class="btn-voltar btn-voltar-livro"></button>
+                <a class="d-lg-block d-none">
+                    <button class="btn-voltar btn-voltar-livro" onclick="history.back()"></button>
                 </a>
 
             </div>
-
 
         </div>
     </div>

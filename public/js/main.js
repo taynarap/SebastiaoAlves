@@ -1,8 +1,6 @@
-// ---------- SCROLL MAIN ----------
+// ---------- SCROLL PARA O MAIN ----------
 fazerScroll();
 
 function fazerScroll(){
-   
-        document.getElementById("#main").scrollIntoView();
-    
+    document.getElementById("corpo").scrollIntoView();
 }

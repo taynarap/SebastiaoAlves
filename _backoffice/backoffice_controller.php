@@ -83,13 +83,14 @@ switch ((isset($rotas[1])) ? $rotas[1] : "") {
         require_once("_backoffice/models/saidas/editar_home_model.php");
         break;
 
+//-------------------- ROTAS INICIO -------------------- 
 
     case "inicio":
         require_once("_backoffice/models/inicio_model.php");
         break;
 
+//-------------------- ROTAS IMPRENSA -------------------- 
 
-//-------------------- ROTAS LIVROS -------------------- 
     case "imprensa":
         require_once("_backoffice/models/imprensa_model.php");
         break;

@@ -7,7 +7,7 @@
 
                     <form action="" method="POST">
 
-                        <div class="t1">Tem certeza que desejas apagar o livro (<?= $id; ?>)?</div>
+                        <div class="t1">Tem certeza que desejas apagar o livro (<?= $livro_especifico["titulo"]; ?>)?</div>
 
                         <button class="btn mt-2" name="apagar" value="<?= $id; ?>">SIM</button>
 

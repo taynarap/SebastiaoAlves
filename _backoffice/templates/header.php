@@ -14,7 +14,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href=<?= $url_base . "_backoffice/public/css/styles.css"; ?>>
 
+    <!-- EDITOR DE TEXTO -->
     <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/classic/ckeditor.js"></script>
+
+    <!-- JAVASCRIPT LOCAL -->    
+    <script src=<?= $url_backoffice . "public/js/main.js"; ?>></script>
 </head>
 
 <body class="text-center">
@@ -41,7 +45,7 @@
                                     <a class="nav-link <?= ($rotas[1] == "inicio") ? "active" : ""; ?>" aria-current="page" href="<?= $url_backoffice; ?>inicio">INÍCIO</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link  <?= ($rotas[1] == "carousel" || $rotas[1] == "editarCarousel" || $rotas[1] == "apagarCarousel"|| $rotas[1] == "novoCarousel") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>carousel">CAROUSEL</a>
+                                    <a class="nav-link  <?= ($rotas[1] == "carousel" || $rotas[1] == "editarCarousel" || $rotas[1] == "apagarCarousel" || $rotas[1] == "novoCarousel") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>carousel">CAROUSEL</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link <?= ($rotas[1] == "home" || $rotas[1] == "editarHome") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>home">HOME</a>
@@ -56,7 +60,7 @@
                                     <a class="nav-link <?= ($rotas[1] == "destaques" || $rotas[1] == "editarDestaques") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>destaques">DESTAQUES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link <?= ($rotas[1] == "imprensa" || $rotas[1] == "editarImprensa" || $rotas[1] == "apagarImprensa"|| $rotas[1] == "novaImprensa") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>imprensa">IMPRENSA</a>
+                                    <a class="nav-link <?= ($rotas[1] == "imprensa" || $rotas[1] == "editarImprensa" || $rotas[1] == "apagarImprensa" || $rotas[1] == "novaImprensa") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>imprensa">IMPRENSA</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link <?= ($rotas[1] == "contactos" || $rotas[1] == "editarContactos") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>contactos">CONTACTOS</a>

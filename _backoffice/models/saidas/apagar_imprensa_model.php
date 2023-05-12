@@ -9,7 +9,7 @@ estaLogado();
 // ---------- INFORMACAO PARA APAGAR ----------
 $id = (empty($rotas[2])) ? NULL : $rotas[2];
 
-$imprensa_especifico = getImprensaID($id);
+$imprensa_especifica = getImprensaID($id);
 
 // ---------- ELEMENTOS VISUAIS DA PAGINA ----------
 require_once("_backoffice/templates/header.php");
@@ -25,7 +25,7 @@ if (isset($_POST['id'])) {
 
     $id = $_POST['id'];
 
-    $imprensa_especifico = selectSQLUnico("SELECT * FROM imprensa WHERE id=$id");
+    $imprensa_especifica = selectSQLUnico("SELECT * FROM imprensa WHERE id=$id");
 
 } elseif (isset($_POST["apagar"])) {
 

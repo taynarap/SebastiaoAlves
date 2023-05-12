@@ -6,19 +6,21 @@
 
                     <div class="t1 mb-3">Criar Novo Livro</div>
 
-                    <a target="_blank" href="<?= $url_base; ?>filemanager/tinyfilemanager.php">
-                        <button>Gestor de Ficheiros</button>
+                    <a target="popup" href="<?= $url_base; ?>filemanager/tinyfilemanager.php" onclick="window.open('<?= $url_base; ?>filemanager/tinyfilemanager.php', 'popup', 'width=750,height=550'); return false;">
+                        <button class="btn">Buscar Link de Imagem</button>
                     </a>
 
                     <form action="" method="POST">
-
                         <input class="mb-3 mt-3 w-50" type="text" name="imagem" required placeholder="Imagem">
                         <br>
 
                         <input class="mb-3 w-50" type="text" name="titulo" required placeholder="Título">
                         <br>
 
-                        <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto" required placeholder="Texto"></textarea>
+                        <input class="mb-3 w-50" type="text" name="observacao" placeholder="Observação">
+                        <br>
+
+                        <textarea class="mb-3" maxlength="10" id="texto" name="texto" placeholder="Texto"></textarea>
                         <script>
                             ClassicEditor
                                 .create(document.querySelector('#texto'))
@@ -26,6 +28,14 @@
                                     console.error(error);
                                 });
                         </script>
+                        <br>
+                        <label class="titulo" for="destaques">Destaque na página Home: </label>
+                        <br>
+                        <select name="destaques">
+                            <option value="0">Não</option>
+                            <option value="1">Sim</option>
+                        </select>
+
                         <br>
                         <input class="btn mt-3" type="submit" value="Adicionar">
 

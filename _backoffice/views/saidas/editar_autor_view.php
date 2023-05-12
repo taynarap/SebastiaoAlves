@@ -3,15 +3,15 @@
         <div class="row justify-content-center">
             <div class="col-12 p-4">
                 <?php if (!isset($_POST["editar"])) : ?>
-                    <div class="t1">Editar Autor</div>
+                    <div class="t1 mb-3">Editar Autor</div>
 
-                    <a target="_blank" href="<?= $url_base; ?>filemanager/tinyfilemanager.php">
-                        <button>Buscar Link de Imagem</button>
+                    <a target="popup" href="<?= $url_base; ?>filemanager/tinyfilemanager.php" onclick="window.open('<?= $url_base; ?>filemanager/tinyfilemanager.php', 'popup', 'width=750,height=550'); return false;">
+                        <button class="btn">Buscar Link de Imagem</button>
                     </a>
 
                     <form action="" method="POST">
                         <input type="hidden" name="editar" value="<?= $id; ?>">
-                        <input class="mb-2 w-75" type="text" name="imagem" value="<?= $autor["imagem"]; ?>">
+                        <input class="mb-2 mt-2 w-75" type="text" name="imagem" value="<?= $autor["imagem"]; ?>">
                         <br>
                         <textarea class="mb-3 w-50" maxlength="10" id="texto" name="texto"><?= $autor["texto"]; ?></textarea>
                         <script>

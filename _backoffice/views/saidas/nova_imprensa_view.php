@@ -6,8 +6,8 @@
 
                     <div class="t1 mb-3">Criar Nova Imprensa</div>
 
-                    <a target="_blank" href="<?= $url_base; ?>filemanager/tinyfilemanager.php">
-                        <button>Link Para a Imagem</button>
+                    <a target="popup" href="<?= $url_base; ?>filemanager/tinyfilemanager.php" onclick="window.open('<?= $url_base; ?>filemanager/tinyfilemanager.php', 'popup', 'width=750,height=550'); return false;">
+                        <button class="btn">Buscar Link de Imagem</button>
                     </a>
 
                     <form action="" method="POST">

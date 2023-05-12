@@ -9,7 +9,7 @@ estaLogado();
 // ---------- INFORMACAO PARA EDICAO ----------
 $id = (empty($rotas[2])) ? NULL : $rotas[2];
 
-$imprensa_especifico = getImprensaID($id);
+$imprensa_especifica = getImprensaID($id);
 
 // ---------- ELEMENTOS VISUAIS DA PAGINA ----------
 require_once("_backoffice/templates/header.php");

@@ -5,14 +5,13 @@
                 <?php if (!isset($_POST["editar"])) : ?>
                     <div class="t1">Editar Carousel Item (<?= $id; ?>)</div>
 
-                    <a target="_blank" href="<?= $url_base; ?>filemanager/tinyfilemanager.php">
-                        <button>Buscar Link de Imagem</button>
+                    <a target="popup" href="<?= $url_base; ?>filemanager/tinyfilemanager.php" onclick="window.open('<?= $url_base; ?>filemanager/tinyfilemanager.php', 'popup', 'width=750,height=550'); return false;">
+                        <button class="btn mt-3">Buscar Link de Imagem</button>
                     </a>
 
                     <form action="" method="POST">
-                        <br>
                         <input type="hidden" name="editar" value="<?= $id; ?>">
-                        <input class="mb-2 w-75" type="text" name="img_desktop" value="<?= $carousel_especifico["img_desktop"]; ?>">
+                        <input class="mb-2 mt-2 w-75" type="text" name="img_desktop" value="<?= $carousel_especifico["img_desktop"]; ?>">
                         <br>
                         <input class="mb-2 w-75" type="text" name="img_mobile" value="<?= $carousel_especifico["img_mobile"]; ?>">
                         <br>

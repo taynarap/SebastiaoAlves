@@ -7,7 +7,7 @@
 
                     <form action="" method="POST">
 
-                        <div class="t1">Tem certeza que desejas apagar a imprensa (<?= $id; ?>)?</div>
+                        <div class="t1">Tem certeza que desejas apagar a imprensa (<?= $imprensa_especifica["titulo"]; ?>)?</div>
 
                         <button class="btn mt-3" name="apagar" value="<?= $id; ?>">SIM</button>
 
@@ -19,7 +19,7 @@
 
                 <?php else : ?>
 
-                    <div class="t1">Imprensa apagado com sucesso!</p>
+                    <div class="t1">Imprensa apagada com sucesso!</p>
 
                         <a href="<?= $url_backoffice; ?>imprensa">
                             <button class="btn mt-3">VOLTAR</button>

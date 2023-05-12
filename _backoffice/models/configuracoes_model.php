@@ -28,3 +28,5 @@ if ($form) {
         iduSQL("UPDATE usuarios SET senha='$senha_cif' WHERE id=$id");
     }
 }
+
+?>

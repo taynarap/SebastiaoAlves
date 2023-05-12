@@ -1,9 +1,5 @@
 <?php
 
-// echo "<pre>";
-// print_r($_SERVER);
-// echo "</pre>";
-
 //Importacoes
 require_once("requisitos.php");
 
