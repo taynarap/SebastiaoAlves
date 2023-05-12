@@ -18,7 +18,7 @@
                             <td><img src="<?= $l["imagem"]; ?>" style="width: 100px"></td>
                             <td><?= $l["titulo"]; ?></td>
                             <td><?= substr($l["texto"], 0, 100); ?>...</td>
-                            <td><?= ($l["ultima_atualizacao"] == "") ? "--- Sem Edições Anteriores---" : $l["ultima_atualizacao"]; ?></td>
+                            <td>Login: <?= ucfirst($l["login_atual"]); ?><br>Data: <?= ($l["ultima_atualizacao"] == "") ? "--- Sem Edições Anteriores---" : $l["ultima_atualizacao"]; ?></td>
 
                             <td>
                                 <a href="<?= $url_backoffice; ?>editarLivro/<?= $l["id"] ?>">

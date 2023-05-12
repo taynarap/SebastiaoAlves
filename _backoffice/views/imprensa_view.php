@@ -15,7 +15,7 @@
                     <?php foreach ($imprensa as $i) : ?>
 
                         <tr>
-                            <td><img src="<?= $i["imagem"]; ?>" style="width: 200px"></td>
+                            <td><img src="<?= $i["imagem"]; ?>" style="max-width: 200px; max-height: 150px"></td>
                             <td><?= $i["titulo"]; ?></td>
                             <td><?= ($i["texto"] == "") ? "--- SEM TEXTO ---" : (substr($i["texto"], 0, 100) . "..."); ?></td>
                             <td><?= $i["data_publicacao"]; ?></td>

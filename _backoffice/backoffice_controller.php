@@ -1,8 +1,8 @@
 <?php
 
 //LOGIN INFO
-//login -> taynara
-//senha -> 1111
+//login -> fabricio
+//senha -> teste
 
 // Importacoes
 require_once("requisitos.php");

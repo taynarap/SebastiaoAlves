@@ -18,7 +18,7 @@
                             <td><img src="<?= $c["img_desktop"]; ?>" style="width: 200px"></td>
                             <td><?= $c["titulo"]; ?></td>
                             <td><?= substr($c["texto"], 0, 100); ?>...</td>
-                            <td><?= $c["ultima_atualizacao"]; ?></td>
+                            <td>Login: <?= ucfirst($c["login_atual"]); ?><br>Data: <?= $c["ultima_atualizacao"]; ?></td>
 
                             <td>
                                 <a href="<?= $url_backoffice; ?>editarCarousel/<?= $c["id"] ?>">

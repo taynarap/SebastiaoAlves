@@ -5,6 +5,7 @@ require_once("requisitos.php");
 
 // ---------- CONFIRMAR LOGIN ----------
 estaLogado();
+$usuario = $_SESSION["usuario"];
 
 // ---------- ELEMENTOS VISUAIS DA PAGINA ----------
 require_once("_backoffice/templates/header.php");
@@ -19,9 +20,11 @@ $form = isset($_POST["img_desktop"]) && isset($_POST["img_mobile"]) && isset($_P
 
 if($form){
 
+    $login_atual = $usuario["login"];
+
     date_default_timezone_set("Europe/Lisbon");
     $data_atual = date("H:i - d/m/Y");
 
-    iduSQL("INSERT INTO carousel (img_desktop, img_mobile, titulo, observacao, texto, saber_mais, ultima_atualizacao) VALUES ('$_POST[img_desktop]', '$_POST[img_mobile]', '$_POST[titulo]', '$_POST[observacao]', '$_POST[texto]', '$_POST[saber_mais]', '$data_atual')");
+    iduSQL("INSERT INTO carousel (img_desktop, img_mobile, titulo, observacao, texto, saber_mais, ultima_atualizacao, login_atual) VALUES ('$_POST[img_desktop]', '$_POST[img_mobile]', '$_POST[titulo]', '$_POST[observacao]', '$_POST[texto]', '$_POST[saber_mais]', '$data_atual', '$login_atual')");
 
 }
