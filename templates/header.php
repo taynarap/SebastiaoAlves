@@ -27,7 +27,9 @@ $carousel = getTodosCarousel();
     <link rel="stylesheet" href="<?= ($rotas[0] == "contactos") ? $url_base . "public/css/contactos.css" : ""; ?>">
 
     <!--JQUERY-->
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!--JS LOCAL-->
     <script src="../public/js/main.js"></script>
     <script src="../public/js/funcoes.js"></script>
 </head>

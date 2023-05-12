@@ -41,10 +41,10 @@
         <div class="container">
             <div id="destaques-area" class="row d-flex justify-content-center mx-auto gap-5 gap-md-5">
 
-                <?php for ($i = 0; $i < 3; $i++) : ?>
+                <?php for($i = 0; $i <= 2; $i++) : ?>
                     <?php $l = $livro_destaque[$i]; ?>
                     <div class="card">
-                        <img src="<?= $l["imagem"]; ?>" alt="livro1">
+                        <img class="destaques-img" src="<?= $l["imagem"]; ?>" alt="Destaque">
                         <div class="card-body">
                             <div id="destaques-titulo"><?= $l["titulo"]; ?></div>
                             <div id="destaques-categoria" class="mt-2"><?= $l["observacao"]; ?></div>

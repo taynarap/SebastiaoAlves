@@ -19,7 +19,7 @@
                             <td><?= $d["observacao"]; ?></td>
 
                             <td>
-                                <a href="<?= $url_backoffice; ?>editar/<?= $d["id"] ?>">
+                                <a href="<?= $url_backoffice; ?>editarDestaques/<?= $d["id"] ?>">
                                     <button class="btn mb-2">Editar</button>
                                 </a>
                             </td>

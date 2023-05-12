@@ -50,13 +50,13 @@
                                     <a class="nav-link <?= ($rotas[1] == "autor" || $rotas[1] == "editarAutor") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>autor">AUTOR</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link <?= ($rotas[1] == "livros" || $rotas[1] == "editarLivros" || $rotas[1] == "apagarLivros") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>livros">LIVROS</a>
+                                    <a class="nav-link <?= ($rotas[1] == "livros" || $rotas[1] == "editarLivro" || $rotas[1] == "apagarLivros" || $rotas[1] == "novoLivro") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>livros">LIVROS</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link <?= ($rotas[1] == "destaques" || $rotas[1] == "editarDestaques") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>destaques">DESTAQUES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link <?= ($rotas[1] == "imprensa" || $rotas[1] == "editarImprensa" || $rotas[1] == "apagarImprensa") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>imprensa">IMPRENSA</a>
+                                    <a class="nav-link <?= ($rotas[1] == "imprensa" || $rotas[1] == "editarImprensa" || $rotas[1] == "apagarImprensa"|| $rotas[1] == "novaImprensa") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>imprensa">IMPRENSA</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link <?= ($rotas[1] == "contactos" || $rotas[1] == "editarContactos") ? "active" : ""; ?>" href="<?= $url_backoffice; ?>contactos">CONTACTOS</a>

@@ -195,4 +195,4 @@ $redes = getRedes();
 
 </footer>
 <script src="./public/js/funcoes.js"></script>
-<script src="../public/js/main.js"></script>
+<script src="./public/js/main.js"></script>

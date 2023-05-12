@@ -1,5 +1,8 @@
-function fazerScrollMain(){
-    if($rotas[0] == ""){
+// ---------- SCROLL MAIN ----------
+fazerScroll();
+
+function fazerScroll(){
+   
         document.getElementById("#main").scrollIntoView();
-    }  
+    
 }

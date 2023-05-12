@@ -36,9 +36,3 @@ function SubmenuLivros(){
     $("#menu-principal").dropdown("toggle");
 }
 
-// ---------- SCROLL MAIN ----------
-function fazerScroll(){
-    if($rotas[0] != ""){
-        document.getElementById("#main").scrollIntoView();
-    }  
-}

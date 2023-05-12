@@ -139,7 +139,7 @@
 
 .card > img{
     border-radius: 0px;
-    max-height: 428px;
+    height: 428px;
 }
 
 .card-body{

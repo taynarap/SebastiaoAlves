@@ -63,8 +63,13 @@ function getLivrosSubmenu()
     return selectSQL("SELECT id, titulo FROM livros ORDER BY titulo ASC");
 }
 
-function getDestaque()
+function getDestaque(){
+    return selectSQL("SELECT * FROM livros WHERE destaques=1 LIMIT 3");
+}
+
+
+function getDestaqueID($id)
 {
-    return selectSQL("SELECT * FROM livros WHERE destaques=1");
+    return selectSQLUnico("SELECT * FROM livros WHERE destaques=1 AND id='$id'");
 }
 ?>

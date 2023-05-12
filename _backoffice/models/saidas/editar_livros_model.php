@@ -20,7 +20,7 @@ require_once("_backoffice/templates/footer.php");
 
 
 // ---------- EDITAR LIVRO ----------
-$form = isset($_POST["imagem"]) && isset($_POST["titulo"]) && isset($_POST["texto"]);
+$form = isset($_POST["imagem"]) && isset($_POST["titulo"]) && isset($_POST["observacao"]) && isset($_POST["texto"]) && isset($_POST["destaques"]);
 
 if (isset($_POST['id'])) {
 
@@ -28,12 +28,9 @@ if (isset($_POST['id'])) {
 } elseif ($form) {
 
     $idLivro = $_POST['editar'];
-    $imagem = $_POST["imagem"];
-    $titulo = $_POST["titulo"];
-    $texto = $_POST["texto"];
 
     date_default_timezone_set("Europe/Lisbon");
     $data_atual = date("H:i - d/m/Y");
 
-    iduSQL("UPDATE livros SET imagem='$imagem', titulo='$titulo', texto='$texto', ultima_atualizacao='$data_atual' WHERE id='$idLivro'");
+    iduSQL("UPDATE livros SET imagem='$_POST[imagem]', titulo='$_POST[titulo]', observacao='$_POST[observacao]', texto='$_POST[texto]', destaques='$_POST[destaques]', ultima_atualizacao='$data_atual' WHERE id='$idLivro'");
 }
