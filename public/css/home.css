@@ -2,10 +2,11 @@
 
 #bemvindo-caixa{
     background-color: var(--branco);
-    height: 538px;
+    min-height: 538px;
+    max-height: 1210px !important;
     margin-top: -45px;
     position: relative;
-    z-index: 30;   
+    z-index: 10;   
 }
 
 #bemvindo-img{
@@ -23,6 +24,14 @@
 
 .bemvindo-paragrafo{
     margin-top: 30px;
+    max-height: 300px;
+}
+
+.bemvindo-paragrafo p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
 }
 
 .bemvindo-btn{
@@ -37,12 +46,11 @@
 }
 
 @media all and (max-width: 767px){
-    
+
     #bemvindo-caixa{
-        box-shadow: 5px 5px 10px rgb(110, 110, 110);
         display: flex;
         justify-content: center;
-        height: 950px;
+        padding-bottom: 20px;
     }
 
     #bemvindo-img{
@@ -58,40 +66,19 @@
         text-align: left;
     }
 
-    .bemvindo-paragrafo{
-        display: block;
-    }
-
     .bemvindo-botao{
         margin-top: 30px;
         text-align: center;
     }
 }
 
-@media all and (max-width: 668px){
-    
-    #bemvindo-caixa{
-        height: 1010px;
-    }
-}
-
-@media all and (max-width: 570px){
-    
-    #bemvindo-caixa{
-        height: 1050px;
-    }
-}
 
 @media all and (max-width: 430px){
-    
-    #bemvindo-caixa{
-        height: 1210px;
+
+    #destaques-titulo{
+        font-size: 20px !important;
     }
 
-    #bemvindo-img {
-        height: auto;
-        width: 290px; 
-    }
 }
 
 

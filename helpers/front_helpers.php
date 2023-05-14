@@ -38,7 +38,7 @@ function getTudoHome(){
 
 function getTudoImprensa()
 {
-    return selectSQL("SELECT * FROM imprensa");
+    return selectSQL("SELECT * FROM imprensa ORDER BY id DESC");
 }
 
 function getImprensaID($id)

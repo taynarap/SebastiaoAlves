@@ -2,17 +2,17 @@
     <!-- BEM-VINDO AUTOR  -->
 
     <div id="bemvindo-area" class="container-fluid">
-        <div id="bemvindo-caixa" class="row offset-md-1 shadow-sm">
+        <div id="bemvindo-caixa" class="row offset-lg-1 shadow-sm">
 
-            <div class="col-auto">
-                <img id="bemvindo-img" src="<?= $home["img_autor"]; ?>" alt="Foto de Sebastião Alves">
+            <div id="bemvindo-img" class="col-auto">
+                <img class="w-100" src="<?= $home["img_autor"]; ?>" alt="Foto de Sebastião Alves">
             </div>
 
             <div class="col-md col-10 bemvindo-texto mx-md-5 mt-5 px-0">
                 <div class="bemvindo-titulo t1">Bem-Vindo ao Meu Website</div>
 
-                <div class="bemvindo-paragrafo p">
-                    <?= substr($autor["texto"], 0, 1100); ?> ...
+                <div class="bemvindo-paragrafo p"> 
+                    <?= $autor["texto"]; ?>   
                 </div>
 
                 <div>
@@ -20,6 +20,7 @@
                         <button class="btn-sabermais bemvindo-btn"></button>
                     </a>
                 </div>
+
             </div>
 
         </div>
@@ -41,11 +42,11 @@
         <div class="container">
             <div id="destaques-area" class="row d-flex justify-content-center mx-auto gap-5 gap-md-5">
 
-                <?php foreach($livro_destaque as $l): ?>
+                <?php foreach ($livro_destaque as $l) : ?>
                     <div class="card">
                         <img class="destaques-img" src="<?= $l["imagem"]; ?>" alt="Destaque">
                         <div class="card-body">
-                            <div id="destaques-titulo"><?= $l["titulo"]; ?></div>
+                            <div id="destaques-titulo" class="titulo"><?= $l["titulo"]; ?></div>
                             <div id="destaques-categoria" class="mt-2"><?= $l["observacao"]; ?></div>
                             <div id="destaques-paragrafo" class="mt-2">
                                 <?= substr($l["texto"], 0, 100); ?>...

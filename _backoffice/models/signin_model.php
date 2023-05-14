@@ -10,7 +10,7 @@ if ($form) {
     $login = $_POST["login"];
     $senha = $_POST["senha"];
     if (fazerLogin($login, $senha)) {
-        header("Location: inicio");
+        header("Location:" . $url_backoffice . "inicio");
         exit();
     }
 }
