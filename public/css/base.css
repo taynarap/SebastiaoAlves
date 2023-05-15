@@ -69,16 +69,6 @@ html{
     background-image: url("../imgs/desktop/sabermais2.svg");
 }
 
-.btn-vermais{
-    background-image: url("../imgs/desktop/vermais.svg");
-    border: none;
-    height: 30px;
-    width: 100px;
-}
-
-.btn-vermais:hover{
-    background-image: url("../imgs/desktop/vermais-cinza.svg");
-}
 
 /* CSS TEXTO */
 .t1{

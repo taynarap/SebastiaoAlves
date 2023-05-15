@@ -5,6 +5,7 @@
 
     //Globais
     $autor = getAutor();
+  
 
     //NAVBAR/CAROUSEL
     require_once("templates/header.php");

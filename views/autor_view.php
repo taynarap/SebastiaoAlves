@@ -11,7 +11,6 @@
             </div>
         </div>
     </div>
-
     <!-- AREA TEXTO -->
 
     <div id="area-texto" class="container">
@@ -19,16 +18,23 @@
 
             <div class="col-12">
 
-                <img class="d-block mx-auto foto-autor" src="<?= $autor["imagem"]; ?>" alt="Fotografia Sebastião Alves">
+                <img class="d-block mx-auto foto-autor mb-4" src="<?= $autor["imagem"]; ?>" alt="Fotografia Sebastião Alves">
 
-                <p class="p paragrafo px-3 px-sm-1">
+                <div id="textoCurto" class="px-3 px-sm-1 d-block d-sm-none texto">
+                    <?= substr($autor["texto"], 0, 1000); ?>
+                </div>
+
+                <div id="textoCompleto" class="px-3 px-sm-1 d-none d-sm-block texto">
                     <?= $autor["texto"]; ?>
-                </p>
+                </div>
 
-                <a class="d-flex d-sm-none justify-content-center " href="...">
-                    <button class="btn-vermais btn-vermais-autor"></button>
-                </a>
+                <div class="d-flex d-sm-none justify-content-center">
+                    <button onclick="verMais()" id="btnvermais"></button>
+                </div>
 
+                <div class="d-flex justify-content-center">
+                    <button onclick="verMais()" class="d-none" id="btnvermenos">Ver Menos</button>
+                </div>
 
                 <a class="d-flex btn-voltar-autor">
                     <button class="btn-voltar" onclick="history.back()"></button>

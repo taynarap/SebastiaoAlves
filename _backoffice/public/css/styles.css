@@ -57,7 +57,7 @@ body{
              -5px -5px 10px #afafaf;
     font-family: 'IBMPlexSans-Medium';
     margin-bottom: 50px;
-    max-width: 80%;
+    width: 90%;
 }
 
 /* ---------- CSS TEXTO ---------- */
@@ -93,7 +93,7 @@ body{
 .nav-link{
     color: var(--cinza-4D);
     font-family: 'LatoBlack';
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
@@ -103,6 +103,17 @@ body{
 
 .nav-link.active{
     color: var(--dourado-B1) !important;
+}
+
+@media all and (max-width:1090px){
+    .t1{
+        font-size: 22px;
+        padding: 35px !important;
+    }
+
+    .nav-link{
+        font-size: 15px;
+    }
 }
 
 /* ---------- FORMS ---------- */

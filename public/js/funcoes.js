@@ -1,5 +1,13 @@
-// ---------- BTN-VOLTAR ----------
+// ---------- BTN-VER MAIS ----------
 
+function verMais(){
+
+    document.querySelector("#textoCompleto").classList.toggle("d-none");
+    document.querySelector("#textoCurto").classList.toggle("d-none");
+    document.querySelector("#btnvermais").classList.toggle("d-none");
+    document.getElementById("btnvermenos").classList.toggle("d-none");
+
+}
 
 // ---------- REDES SOCIAIS ICONS ----------
 function instaHover(img){

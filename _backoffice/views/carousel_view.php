@@ -1,6 +1,6 @@
 <main>
     <div class="container-fluid caixa">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center table-responsive">
             <table class="col-12 table table-striped mb-4 p-4 align-middle">
                 <thead>
                     <tr>
@@ -15,7 +15,7 @@
                     <?php foreach ($carousel as $c) : ?>
 
                         <tr>
-                            <td><img src="<?= $c["img_desktop"]; ?>" style="width: 200px"></td>
+                            <td><img src="<?= $c["img_desktop"]; ?>" style="max-width: 200px"></td>
                             <td><?= $c["titulo"]; ?></td>
                             <td><?= substr($c["texto"], 0, 100); ?>...</td>
                             <td>Login: <?= ucfirst($c["login_atual"]); ?><br>Data: <?= $c["ultima_atualizacao"]; ?></td>
