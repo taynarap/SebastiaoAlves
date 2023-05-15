@@ -4,14 +4,11 @@
 // login -> fabricio
 // senha -> teste
 
-// // ---------- IMPORTACOES ----------
-// require_once("requisitos.php");
+// ---------- IMPORTACOES ----------
+require_once("requisitos.php");
 
 
-// // ---------- ROTAS ----------
-// // $rotas = $_SERVER["REQUEST_URI"];
-// // $rotas = str_replace("/sebastiao_alves/backoffice", "", $rotas);
-// // $rotas = explode("/", $rotas);
+// ---------- ROTAS ----------
 
 switch ((isset($rotas[1])) ? $rotas[1] : "") {
 

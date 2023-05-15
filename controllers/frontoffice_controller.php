@@ -1,5 +1,8 @@
 <?php
+// ---------- IMPORTACOES ----------
+require_once("requisitos.php");
 
+// ---------- ROTAS ----------
 switch($rotas[0]){
 
  case "":

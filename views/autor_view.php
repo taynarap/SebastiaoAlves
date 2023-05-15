@@ -21,7 +21,7 @@
                 <img class="d-block mx-auto foto-autor mb-4" src="<?= $autor["imagem"]; ?>" alt="Fotografia Sebastião Alves">
 
                 <div id="textoCurto" class="px-3 px-sm-1 d-block d-sm-none texto">
-                    <?= substr($autor["texto"], 0, 1000); ?>
+                    <?= substr($autor["texto"], 0, 800); ?>
                 </div>
 
                 <div id="textoCompleto" class="px-3 px-sm-1 d-none d-sm-block texto">

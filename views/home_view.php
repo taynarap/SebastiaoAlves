@@ -48,7 +48,7 @@
                         <div class="card-body">
                             <div id="destaques-titulo" class="titulo"><?= $l["titulo"]; ?></div>
                             <div id="destaques-categoria" class="mt-2"><?= $l["observacao"]; ?></div>
-                            <div id="destaques-paragrafo" class="mt-2">
+                            <div id="destaques-paragrafo" class="mt-2 p">
                                 <?= substr($l["texto"], 0, 100); ?>...
                             </div>
                             <div class="destaques-botao">

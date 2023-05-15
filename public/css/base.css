@@ -79,9 +79,9 @@ html{
 }
 
 .p{
-    font-family: 'IBMPlexSans-Light';
-    font-size: 13px;
-    color: var(--cinza-4D);
+    font-family: 'IBMPlexSans-Light' !important;
+    font-size: 13px !important;
+    color: var(--cinza-4D) !important;
 }
 
 .titulo{
