@@ -1,15 +1,13 @@
-<h1 align="center"> Projecto Sebastião Alves </h1>
+<h1 align="center"> Sebastião Alves Project </h1>
 
 <p align="center">
-Projecto final para o curso de 8 meses de Full-stack Web Development da CodeMaster. Curso reconhecido pelo Governo Português, iniciativa InCode.2030
+The final project for the intensive 8-month-long Full-Stack Web Development course provided by CodeMaster. This is a course certified and recognized by InCode.2030, an initiative from the Portuguese government.
 </p>
 
-## 🔎 Projeto
-Esse é um projeto Web Responsivo de um site para o autor Sebastião Alves. Neste projecto foi realizado o front-end e back-end, inclui o website para o autor apresentar os seus livros e trabalhos, mas também um backoffice que o permite alterar o conteúdo do website.
+## 🔎 Project
+Responsive website for the book author Sebastião Alves. Within this project, it was developed the front-end and back-end, including the website for the author to share his work and also a back office that allows him to change the content shown on the website.
 
-## ⚙️ Tecnologias
-
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+## ⚙️ Technologies
 
 ![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5)&nbsp;
 ![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6)&nbsp;
