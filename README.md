@@ -20,10 +20,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)&nbsp;
 ![Github](https://img.shields.io/badge/-Github-05122A?style=flat&logo=github)&nbsp;
 
-## 🏷️ Layout
-
-Você pode visualizar o layoout do projeto através
-[desse link](https://www.figma.com/file/V9ZstoFrdxK6mV5ymJBoY7/C%C3%A1psula-do-tempo-%E2%80%A2-Trilha-Explorer?type=design&node-id=0%3A1&t=WoFcBoZi9Vo8d1HP-1).
-É necessário ter uma conta no [Figma](https://www.figma.com)
 
 
